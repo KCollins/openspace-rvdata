@@ -1,12 +1,10 @@
-asset.require("../actions")
-asset.require("./actions")
 local sun = asset.require("scene/solarsystem/sun/transforms")
 local earthTransforms = asset.require("scene/solarsystem/planets/earth/earth")
 
 -- Define the ship model resource
 local shipModel = asset.resource({
   Name = "3DBenchy Model",
-  Type = "HttpSynchronization",
+  Type = "UrlSynchronization",
   Identifier = "3dbenchy_model",
   Url = "https://github.com/CreativeTools/3DBenchy/raw/master/Single-part/3DBenchy.stl", -- Use 'raw' URL for direct file access
   Version = 1
