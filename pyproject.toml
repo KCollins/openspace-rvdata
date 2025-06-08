@@ -1,0 +1,77 @@
+[build-system]
+requires = ["oldest-supported-numpy", "setuptools >= 38.6", "pip >= 10"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openspace_rvdata"
+version = "0.0.1"
+license = {file = "LICENSE"}
+description = 'Library for generating OpenSpace assets for RV ship trails.'
+maintainers = [
+    {name = "Kristina V. Collins", email = "kvcollins@spacescience.org"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "datetime",
+    "io",
+    "json",
+    "pandas",
+    "plotly"
+]
+readme = "README.md"
+keywords = [
+    "OpenSpace",
+    "R2R",
+    "rvdata",
+    "research vessel",
+    "marine",
+    "cruise",
+    "lua",
+    "coordinates",
+    "observations",
+    "models",
+    "analysis",
+    "instruments",
+    "mapping",
+    "visualization",
+    "plotting",
+    "Antarctica"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Oceanography",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+]
+
+[project.optional-dependencies]
+test = [
+     "coverage[toml]",
+     "pylint",
+]
+
+[project.urls]
+source = "https://github.com/KCollins/openspace_rvdata"
+documentation = "https://openspace_rvdata.readthedocs.io/en/latest"
+download = "https://github.com/KCollins/openspace_rvdata/releases"
+
+[tool.coverage.run]
+relative_files = true
+include = ["*/openspace_rvdata/*",
+           "*/openspace_rvdata/tests/*"]
+
+[tool.coverage.paths]
+ocb_paths = ["openspace_rvdata/",
+             "*/lib/*/site-packages/openspace_rvdata"]
+
+[tool.setuptools]
+packages = ["openspace_rvdata"]
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+disable = "R0912,R0913,R0914,R0915,R0917,C0103,W0622"
