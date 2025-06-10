@@ -1,9 +1,39 @@
 # openspace_rvdata
-Ship track plots for [OpenSpace](https://www.openspaceproject.com) pulling data from https://www.rvdata.us.  
+Ship track plots for [OpenSpace](https://www.openspaceproject.com) pulling data from https://www.rvdata.us.
+
+
 
 ## Examples
-# [RR2402](https://www.rvdata.us/search/cruise/RR2402)
+### [RR2402](https://www.rvdata.us/search/cruise/RR2402)
 
+## Software Architecture
+The highlighted blocks are OpenSpace assets.
+```mermaid
+flowchart TD
+    n1["cruise_id, DOI or vessel name"] --> n2["get_r2r_url"]
+    n2 -- url --> n3["get_cruise_data"]
+    n3 --> n4["get_cruise_asset"]
+    n4 --> n5["cruise_id.asset"]
+    n6["cruise_id, sampling rate"] --> n7["get_cruise_nav"]
+    n7 --> n8["geoCSV"]
+    n8 --> n9["geocsv2geojson"] & n10["cruise_id.geojson"] & n11["geocsv2hypergram"] & n13["get_cruise_keyframes"]
+    n9 --> n10
+    n11 --> n12["cruise_id.html"]
+    n13 --> n14["cruise_id_keyframes.asset"]
+
+    n1@{ shape: manual-input}
+    n2@{ shape: process}
+    n5@{ shape: document}
+    n6@{ shape: manual-input}
+    n8@{ shape: document}
+    n9@{ shape:document}
+    n12@{ shape: document}
+    n14@{ shape: document}
+    click n1 "https://www.rvdata.us/search/cruise/RR2402"
+   
+   style n5 fill:#669,stroke:#333,stroke-width:4px 
+   style n14 fill:#669,stroke:#333,stroke-width:4px
+```
 
 ## Acknowledgments
 Many thanks to the members of the [OpenSpace Slack](https://openspacesupport.slack.com), particularly [Alex Bock](https://github.com/alexanderbock) (Linköping University), [Micah Acinapura](https://github.com/micahnyc) (American Museum of Natural History) and [James Hedberg](https://github.com/hedbergj) (CCNY Planetarium), who provided guidance and example code. Google Gemini was used to prototype some of the code in this repository. 
