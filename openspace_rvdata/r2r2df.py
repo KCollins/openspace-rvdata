@@ -213,9 +213,8 @@ def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame
     print(f"Downloading data from: {product_actual_url}")
 
     # --- 3. Download the archive file and save to /tmp ---
-    tmp_dir = "/tmp"
+    tmp_dir = os.path.join(os.getcwd(), "tmp")
     os.makedirs(tmp_dir, exist_ok=True) # Create /tmp subdirectory if it doesn't exist
-
     archive_filename = os.path.join(tmp_dir, f"{cruise_id}_nav_data.tar.gz")
 
     try:
