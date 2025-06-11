@@ -1,6 +1,10 @@
 import pandas as pd
 import requests # This library is essential for making HTTP requests
 from datetime import datetime as dt # Still useful if you need to manually construct datetimes
+import os
+import tarfile
+import re # For regular expressions to find the correct geoCSV file
+import json # Added for parsing nested JSON strings
 
 def get_r2r_url(cruise_id=None, doi=None, vessel_name=None):
     """
@@ -28,11 +32,11 @@ def get_r2r_url(cruise_id=None, doi=None, vessel_name=None):
         if doi or vessel_name:
             raise ValueError("Cannot specify 'cruise_id' with 'doi' or 'vessel_name'.")
         return f"{base_url}cruise_id/{cruise_id}"
-    elif vessel_name:
+    if vessel_name:
         if doi:
             raise ValueError("Cannot specify 'vessel_name' with 'doi'.")
         return f"{base_url}vessel/{vessel_name}"
-    elif doi:
+    if doi:
         # Extract the numerical part of the DOI.
         # Assumes DOI format like "10.xxxx/YYYYY" where YYYYY is the part needed.
         try:
@@ -46,7 +50,7 @@ def get_r2r_url(cruise_id=None, doi=None, vessel_name=None):
     else:
         raise ValueError("At least one argument (cruise_id, doi, or vessel_name) must be provided.")
 
-def get_cruise_data(url):
+def get_cruise_metadata(url):
     """
     Fetches cruise data from the rvdata.us API and parses it into a pandas DataFrame.
 
@@ -113,3 +117,212 @@ def get_cruise_data(url):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return pd.DataFrame()
+
+def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame:
+    """
+    Fetches navigation data for a given cruise from the R2R repository (rvdata.org),
+    processes it, and returns a resampled pandas DataFrame.
+
+    Args:
+        cruise_id (str): The ID of the cruise (e.g., "RR2402").
+        sampling_rate (str): The desired sampling rate for the output DataFrame
+                             (e.g., "1min", "60min", "1H"). Defaults to "60min".
+                             This string should be compatible with pandas' resample method.
+
+    Returns:
+        pandas.DataFrame: A DataFrame containing the navigation data, resampled
+                          to the specified rate. The DataFrame will have a DatetimeIndex.
+
+    Raises:
+        requests.exceptions.RequestException: If there's a problem with the network request.
+        FileNotFoundError: If the expected .geocsv file is not found after extraction.
+        ValueError: If the 'Navigation' product type is not found or if a suitable
+                    time column for resampling cannot be identified.
+    """
+
+    # --- 1. Generate the initial URL ---
+    base_api_url = "https://service.rvdata.us/api/fileset/cruise_id/"
+    api_url = f"{base_api_url}{cruise_id}?device_type=gnss"
+    print(f"Fetching metadata from: {api_url}")
+
+    try:
+        response = requests.get(api_url)
+        response.raise_for_status()  # Raise an HTTPError for bad responses (4xx or 5xx)
+        metadata = response.json()
+        print(f"Successfully fetched metadata. Top-level keys: {metadata.keys()}")
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching metadata from {api_url}: {e}")
+        raise
+
+    # --- 2. Filter to product type "Navigation" and find "product_actual_url" ---
+    navigation_entry_product_info = None
+    all_product_types_found = set() # For debugging: collect all product_type_name values
+
+    # CORRECTED: Access 'data' key, not 'fileset'
+    fileset_items = metadata.get('data', [])
+    print(f"Found {len(fileset_items)} items in 'data' (previously 'fileset').")
+
+    # The 'data' key now contains a list of dictionaries.
+    # Each dictionary in this list has a 'product_info' which is a JSON string.
+    for i, item in enumerate(fileset_items):
+        print(f"Processing item {i+1} from 'data' list...")
+        # Get product_info value, and check if it's a non-empty string
+        product_info_str = item.get('product_info')
+        if product_info_str and isinstance(product_info_str, str):
+            try:
+                # Parse the product_info string into a Python list of dictionaries
+                product_details = json.loads(product_info_str)
+                print(f"  Item {i+1} has 'product_info'. Parsed {len(product_details)} product details.")
+                for detail in product_details:
+                    product_type_name = detail.get('product_type_name')
+                    if product_type_name:
+                        all_product_types_found.add(product_type_name)
+                        print(f"    Found product_type_name: '{product_type_name}'")
+                    if product_type_name == 'Navigation':
+                        navigation_entry_product_info = detail
+                        print(f"  ---> Found 'Navigation' product type within item {i+1}!")
+                        break # Found in this product_info, exit inner loop
+                if navigation_entry_product_info:
+                    break # Found the overall navigation entry, exit outer loop
+            except json.JSONDecodeError as e:
+                print(f"Warning: Could not decode JSON from product_info for fileset_id {item.get('fileset_id')}. Error: {e}")
+                continue # Skip to the next item if parsing fails
+        else:
+            print(f"  Item {i+1} does not have a valid 'product_info' string (found: {product_info_str}).")
+
+
+    if not navigation_entry_product_info:
+        # If 'Navigation' wasn't found, print all product types encountered for debugging
+        print(f"DEBUG: No 'Navigation' product type found within any 'product_info' in the API response for cruise_id: {cruise_id}")
+        if all_product_types_found:
+            print(f"DEBUG: All product types found were: {sorted(list(all_product_types_found))}")
+        else:
+            print("DEBUG: No 'product_info' fields found or all failed to parse for any product_type_name.")
+        raise ValueError(f"No 'Navigation' product type found within 'product_info' for cruise_id: {cruise_id}")
+
+    product_actual_url = navigation_entry_product_info.get('product_actual_url')
+    if not product_actual_url:
+        raise ValueError(f"'product_actual_url' not found in Navigation product_info entry for cruise_id: {cruise_id}")
+
+    print(f"Downloading data from: {product_actual_url}")
+
+    # --- 3. Download the archive file and save to /tmp ---
+    tmp_dir = "/tmp"
+    os.makedirs(tmp_dir, exist_ok=True) # Create /tmp subdirectory if it doesn't exist
+
+    archive_filename = os.path.join(tmp_dir, f"{cruise_id}_nav_data.tar.gz")
+
+    try:
+        archive_response = requests.get(product_actual_url, stream=True)
+        archive_response.raise_for_status()
+
+        with open(archive_filename, 'wb') as f:
+            for chunk in archive_response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        print(f"Downloaded archive to: {archive_filename}")
+    except requests.exceptions.RequestException as e:
+        print(f"Error downloading archive from {product_actual_url}: {e}")
+        raise
+
+    # --- 4. Unzip the folder and bring .geocsv files to /tmp ---
+    extracted_geocsv_path = None
+    expected_geocsv_pattern = re.compile(rf"{re.escape(cruise_id)}_\d+min\.geoCSV", re.IGNORECASE)
+
+    try:
+        with tarfile.open(archive_filename, "r:gz") as tar:
+            found_members = []
+            # First, identify the geoCSV files that match the pattern
+            for member in tar.getmembers():
+                if member.isfile() and expected_geocsv_pattern.search(member.name):
+                    found_members.append(member)
+
+            if not found_members:
+                raise FileNotFoundError(f"No .geoCSV file matching pattern '{expected_geocsv_pattern.pattern}' found in the archive.")
+
+            # Prioritize the "1min" file if multiple exist, otherwise take the first found.
+            target_geocsv_member = None
+            for member in found_members:
+                if f"{cruise_id}_1min.geoCSV".lower() in member.name.lower():
+                    target_geocsv_member = member
+                    break
+            if not target_geocsv_member:
+                target_geocsv_member = found_members[0] # Fallback to first found if 1min not explicit
+
+            # Extract the identified geoCSV file to the /tmp directory
+            extracted_geocsv_path = os.path.join(tmp_dir, os.path.basename(target_geocsv_member.name))
+            with open(extracted_geocsv_path, 'wb') as outfile:
+                outfile.write(tar.extractfile(target_geocsv_member).read())
+            print(f"Extracted .geoCSV file to: {extracted_geocsv_path}")
+
+    except tarfile.ReadError as e:
+        print(f"Error reading tar.gz file {archive_filename}: {e}")
+        raise
+    except FileNotFoundError:
+        # Re-raise if no geoCSV found within the archive
+        raise
+    finally:
+        # Clean up the downloaded tar.gz file
+        if os.path.exists(archive_filename):
+            os.remove(archive_filename)
+            print(f"Removed temporary archive: {archive_filename}")
+
+
+    # --- 5. Read in the contents of the .geoCSV file as a pandas DataFrame ---
+    if not extracted_geocsv_path or not os.path.exists(extracted_geocsv_path):
+        raise FileNotFoundError(f"Extracted .geoCSV file not found at expected path: {extracted_geocsv_path}")
+
+    try:
+        # Try to read with a common time column name, or infer.
+        # Common geoCSV time column names: 'ISO_8601_UTC', 'Time_UTC', 'datetime', 'Timestamp'
+        df = pd.read_csv(extracted_geocsv_path, comment='#')
+
+        # Attempt to find a suitable time column and set as index
+        time_col = None
+        possible_time_cols = ['ISO_8601_UTC', 'Time_UTC', 'datetime', 'Timestamp', 'time']
+        for col in possible_time_cols:
+            if col in df.columns:
+                time_col = col
+                break
+        
+        if time_col is None:
+            # Fallback: Check if the first column can be parsed as datetime
+            # This is a heuristic, but common for time-series data.
+            try:
+                df['__temp_time_col'] = pd.to_datetime(df.iloc[:, 0], errors='coerce')
+                if not df['__temp_time_col'].isnull().all():
+                    time_col = df.columns[0]
+                    df.rename(columns={time_col: 'time'}, inplace=True) # Standardize name
+                    time_col = 'time'
+                else:
+                    df.drop(columns='__temp_time_col', inplace=True)
+            except Exception:
+                pass # Ignore if first column isn't time-like
+
+        if time_col is None:
+            raise ValueError("Could not find a suitable time column for resampling in the .geoCSV file. "
+                             "Please ensure a column like 'ISO_8601_UTC' or similar exists.")
+        
+        df[time_col] = pd.to_datetime(df[time_col])
+        df.set_index(time_col, inplace=True)
+        # Drop the temporary extracted geoCSV file
+        os.remove(extracted_geocsv_path)
+        print(f"Removed temporary .geoCSV file: {extracted_geocsv_path}")
+
+    except pd.errors.EmptyDataError:
+        print(f"The .geoCSV file at {extracted_geocsv_path} is empty or only contains comments.")
+        raise
+    except Exception as e:
+        print(f"Error reading or processing .geoCSV file {extracted_geocsv_path}: {e}")
+        # Clean up if an error occurs after extraction but before resampling
+        if os.path.exists(extracted_geocsv_path):
+            os.remove(extracted_geocsv_path)
+        raise
+
+    # --- 6. Resample the DataFrame ---
+    # For resampling, we typically need to specify how to aggregate the data.
+    # Using .mean() is a common approach for navigation data, but other methods
+    # like .first(), .last(), .median() could be used depending on the specific need.
+    print(f"Resampling data to: {sampling_rate}")
+    df_resampled = df.resample(sampling_rate).mean()
+
+    return df_resampled

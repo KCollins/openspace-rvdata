@@ -11,8 +11,8 @@ The highlighted blocks are OpenSpace assets.
 ```mermaid
 flowchart TD
     n1["cruise_id, DOI or vessel name"] --> n2["get_r2r_url"]
-    n2 -- url --> n3["get_cruise_data"]
-    n3 --> n4["get_cruise_asset"]
+    n2 -- url --> n3["get_cruise_metadata"]
+    n3 -- mdf --> n4["get_cruise_asset"]
     n4 --> n5["cruise_id.asset"]
     n6["cruise_id, sampling rate"] --> n7["get_cruise_nav"]
     n7 --> n8["geoCSV"]
