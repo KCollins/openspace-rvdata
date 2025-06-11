@@ -118,6 +118,13 @@ def get_cruise_metadata(url):
         print(f"An unexpected error occurred: {e}")
         return pd.DataFrame()
 
+import requests
+import pandas as pd
+import os
+import tarfile
+import re # For regular expressions to find the correct geoCSV file
+import json # Added for parsing nested JSON strings
+
 def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame:
     """
     Fetches navigation data for a given cruise from the R2R repository (rvdata.org),
@@ -158,7 +165,6 @@ def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame
     navigation_entry_product_info = None
     all_product_types_found = set() # For debugging: collect all product_type_name values
 
-    # CORRECTED: Access 'data' key, not 'fileset'
     fileset_items = metadata.get('data', [])
     print(f"Found {len(fileset_items)} items in 'data' (previously 'fileset').")
 
@@ -225,34 +231,29 @@ def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame
         raise
 
     # --- 4. Unzip the folder and bring .geocsv files to /tmp ---
-    extracted_geocsv_path = None
-    expected_geocsv_pattern = re.compile(rf"{re.escape(cruise_id)}_\d+min\.geoCSV", re.IGNORECASE)
+    # List to store paths of all extracted geoCSV files
+    all_extracted_geocsv_files = []
+    # MODIFIED: Changed regex to extract any .geoCSV file
+    expected_geocsv_pattern = re.compile(r"\.geoCSV$", re.IGNORECASE)
 
     try:
         with tarfile.open(archive_filename, "r:gz") as tar:
-            found_members = []
-            # First, identify the geoCSV files that match the pattern
+            members_to_extract = []
             for member in tar.getmembers():
                 if member.isfile() and expected_geocsv_pattern.search(member.name):
-                    found_members.append(member)
+                    members_to_extract.append(member)
 
-            if not found_members:
-                raise FileNotFoundError(f"No .geoCSV file matching pattern '{expected_geocsv_pattern.pattern}' found in the archive.")
+            if not members_to_extract:
+                raise FileNotFoundError(f"No .geoCSV file found in the archive.")
 
-            # Prioritize the "1min" file if multiple exist, otherwise take the first found.
-            target_geocsv_member = None
-            for member in found_members:
-                if f"{cruise_id}_1min.geoCSV".lower() in member.name.lower():
-                    target_geocsv_member = member
-                    break
-            if not target_geocsv_member:
-                target_geocsv_member = found_members[0] # Fallback to first found if 1min not explicit
-
-            # Extract the identified geoCSV file to the /tmp directory
-            extracted_geocsv_path = os.path.join(tmp_dir, os.path.basename(target_geocsv_member.name))
-            with open(extracted_geocsv_path, 'wb') as outfile:
-                outfile.write(tar.extractfile(target_geocsv_member).read())
-            print(f"Extracted .geoCSV file to: {extracted_geocsv_path}")
+            print(f"Found {len(members_to_extract)} .geoCSV files in the archive. Extracting all to /tmp...")
+            for member in members_to_extract:
+                # Ensure the extracted file is at the top level of /tmp
+                target_path_in_tmp = os.path.join(tmp_dir, os.path.basename(member.name))
+                with open(target_path_in_tmp, 'wb') as outfile:
+                    outfile.write(tar.extractfile(member).read())
+                all_extracted_geocsv_files.append(target_path_in_tmp)
+                print(f"  Extracted: {os.path.basename(member.name)}")
 
     except tarfile.ReadError as e:
         print(f"Error reading tar.gz file {archive_filename}: {e}")
@@ -261,20 +262,31 @@ def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame
         # Re-raise if no geoCSV found within the archive
         raise
     finally:
-        # Clean up the downloaded tar.gz file
+        # Clean up the downloaded tar.gz file regardless of success or failure
         if os.path.exists(archive_filename):
             os.remove(archive_filename)
             print(f"Removed temporary archive: {archive_filename}")
 
 
-    # --- 5. Read in the contents of the .geoCSV file as a pandas DataFrame ---
-    if not extracted_geocsv_path or not os.path.exists(extracted_geocsv_path):
-        raise FileNotFoundError(f"Extracted .geoCSV file not found at expected path: {extracted_geocsv_path}")
+    # --- 5. Read in the contents of the *selected* .geoCSV file as a pandas DataFrame ---
+    selected_geocsv_to_read = None
+    # Prioritize the "1min" file among the extracted ones, if it exists
+    for filepath in all_extracted_geocsv_files:
+        if f"{cruise_id}_1min.geoCSV".lower() in os.path.basename(filepath).lower():
+            selected_geocsv_to_read = filepath
+            break
+    # Fallback to the first found if "1min" not explicit
+    if not selected_geocsv_to_read and all_extracted_geocsv_files:
+        selected_geocsv_to_read = all_extracted_geocsv_files[0]
 
+    if not selected_geocsv_to_read or not os.path.exists(selected_geocsv_to_read):
+        raise FileNotFoundError(f"No suitable .geoCSV file found or extracted to read.")
+
+    print(f"Reading data from selected .geoCSV file: {os.path.basename(selected_geocsv_to_read)}")
     try:
         # Try to read with a common time column name, or infer.
         # Common geoCSV time column names: 'ISO_8601_UTC', 'Time_UTC', 'datetime', 'Timestamp'
-        df = pd.read_csv(extracted_geocsv_path, comment='#')
+        df = pd.read_csv(selected_geocsv_to_read, comment='#')
 
         # Attempt to find a suitable time column and set as index
         time_col = None
@@ -304,19 +316,20 @@ def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame
         
         df[time_col] = pd.to_datetime(df[time_col])
         df.set_index(time_col, inplace=True)
-        # Drop the temporary extracted geoCSV file
-        os.remove(extracted_geocsv_path)
-        print(f"Removed temporary .geoCSV file: {extracted_geocsv_path}")
 
     except pd.errors.EmptyDataError:
-        print(f"The .geoCSV file at {extracted_geocsv_path} is empty or only contains comments.")
+        print(f"The .geoCSV file at {selected_geocsv_to_read} is empty or only contains comments.")
         raise
     except Exception as e:
-        print(f"Error reading or processing .geoCSV file {extracted_geocsv_path}: {e}")
-        # Clean up if an error occurs after extraction but before resampling
-        if os.path.exists(extracted_geocsv_path):
-            os.remove(extracted_geocsv_path)
+        print(f"Error reading or processing .geoCSV file {selected_geocsv_to_read}: {e}")
         raise
+    # finally:
+    #     # Clean up all extracted geoCSV files regardless of success or failure
+    #     for fpath in all_extracted_geocsv_files:
+    #         if os.path.exists(fpath):
+    #             os.remove(fpath)
+    #             print(f"Removed temporary .geoCSV file: {os.path.basename(fpath)}")
+
 
     # --- 6. Resample the DataFrame ---
     # For resampling, we typically need to specify how to aggregate the data.
@@ -326,3 +339,4 @@ def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame
     df_resampled = df.resample(sampling_rate).mean()
 
     return df_resampled
+
