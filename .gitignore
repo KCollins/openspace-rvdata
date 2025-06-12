@@ -70,3 +70,4 @@ custom_lint.sh
 
 # IDEs
 .idea/
+notebooks/tmp
