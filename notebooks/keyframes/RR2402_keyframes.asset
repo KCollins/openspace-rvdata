@@ -1,0 +1,7463 @@
+local keyframes = {
+      ["2024-02-16T23:59:59"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236072,
+    Latitude = 32.70652,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 40.213,
+    UseHeightmap = false
+  },
+  ["2024-02-17T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236062,
+    Latitude = 32.706543,
+    Altitude = 0,
+    SpeedMadeGood = 0.15,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236037,
+    Latitude = 32.706492,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236057,
+    Latitude = 32.706517,
+    Altitude = 0,
+    SpeedMadeGood = 0.15,
+    CourseMadeGood = 59.4,
+    UseHeightmap = false
+  },
+  ["2024-02-17T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236055,
+    Latitude = 32.706518,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236065,
+    Latitude = 32.706515,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236063,
+    Latitude = 32.706512,
+    Altitude = 0,
+    SpeedMadeGood = 0.36,
+    CourseMadeGood = 244.68,
+    UseHeightmap = false
+  },
+  ["2024-02-17T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.23607,
+    Latitude = 32.706523,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236077,
+    Latitude = 32.706518,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T08:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.23607,
+    Latitude = 32.706542,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236077,
+    Latitude = 32.706513,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.23607,
+    Latitude = 32.706507,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236082,
+    Latitude = 32.706527,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 191.935,
+    UseHeightmap = false
+  },
+  ["2024-02-17T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236055,
+    Latitude = 32.706525,
+    Altitude = 0,
+    SpeedMadeGood = 0.36,
+    CourseMadeGood = 128.257,
+    UseHeightmap = false
+  },
+  ["2024-02-17T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.236063,
+    Latitude = 32.70652,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.23429,
+    Latitude = 32.701577,
+    Altitude = 0,
+    SpeedMadeGood = 0.52,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.297463,
+    Latitude = 32.655265,
+    Altitude = 0,
+    SpeedMadeGood = 6.23,
+    CourseMadeGood = 311.752,
+    UseHeightmap = false
+  },
+  ["2024-02-17T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.46124,
+    Latitude = 32.79298,
+    Altitude = 0,
+    SpeedMadeGood = 6.41,
+    CourseMadeGood = 315.217,
+    UseHeightmap = false
+  },
+  ["2024-02-17T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.537108,
+    Latitude = 32.845808,
+    Altitude = 0,
+    SpeedMadeGood = 0.79,
+    CourseMadeGood = 239.36,
+    UseHeightmap = false
+  },
+  ["2024-02-17T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.551642,
+    Latitude = 32.837798,
+    Altitude = 0,
+    SpeedMadeGood = 0.05,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.55163,
+    Latitude = 32.83781,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.551632,
+    Latitude = 32.837822,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 191.917,
+    UseHeightmap = false
+  },
+  ["2024-02-17T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.381598,
+    Latitude = 32.86841,
+    Altitude = 0,
+    SpeedMadeGood = 6.32,
+    CourseMadeGood = 84.792,
+    UseHeightmap = false
+  },
+  ["2024-02-17T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.294942,
+    Latitude = 32.869612,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-17T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.415882,
+    Latitude = 32.856035,
+    Altitude = 0,
+    SpeedMadeGood = 6.0,
+    CourseMadeGood = 264.453,
+    UseHeightmap = false
+  },
+  ["2024-02-18T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.529313,
+    Latitude = 32.849127,
+    Altitude = 0,
+    SpeedMadeGood = 0.48,
+    CourseMadeGood = 202.882,
+    UseHeightmap = false
+  },
+  ["2024-02-18T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.529342,
+    Latitude = 32.849082,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 319.833,
+    UseHeightmap = false
+  },
+  ["2024-02-18T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.529283,
+    Latitude = 32.849053,
+    Altitude = 0,
+    SpeedMadeGood = 0.3,
+    CourseMadeGood = 319.832,
+    UseHeightmap = false
+  },
+  ["2024-02-18T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.529312,
+    Latitude = 32.849053,
+    Altitude = 0,
+    SpeedMadeGood = 0.15,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-18T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.533338,
+    Latitude = 32.856308,
+    Altitude = 0,
+    SpeedMadeGood = 0.73,
+    CourseMadeGood = 346.442,
+    UseHeightmap = false
+  },
+  ["2024-02-18T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.546477,
+    Latitude = 32.87991,
+    Altitude = 0,
+    SpeedMadeGood = 0.86,
+    CourseMadeGood = 353.127,
+    UseHeightmap = false
+  },
+  ["2024-02-18T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.558045,
+    Latitude = 32.900687,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-18T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.558032,
+    Latitude = 32.900685,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-18T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.55833,
+    Latitude = 32.901202,
+    Altitude = 0,
+    SpeedMadeGood = 0.91,
+    CourseMadeGood = 333.153,
+    UseHeightmap = false
+  },
+  ["2024-02-18T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.596327,
+    Latitude = 32.945458,
+    Altitude = 0,
+    SpeedMadeGood = 2.26,
+    CourseMadeGood = 323.352,
+    UseHeightmap = false
+  },
+  ["2024-02-18T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.652438,
+    Latitude = 33.001727,
+    Altitude = 0,
+    SpeedMadeGood = 2.58,
+    CourseMadeGood = 318.349,
+    UseHeightmap = false
+  },
+  ["2024-02-18T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.743105,
+    Latitude = 33.060408,
+    Altitude = 0,
+    SpeedMadeGood = 6.3,
+    CourseMadeGood = 299.051,
+    UseHeightmap = false
+  },
+  ["2024-02-18T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.957875,
+    Latitude = 33.153415,
+    Altitude = 0,
+    SpeedMadeGood = 6.35,
+    CourseMadeGood = 300.728,
+    UseHeightmap = false
+  },
+  ["2024-02-18T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.145217,
+    Latitude = 33.283908,
+    Altitude = 0,
+    SpeedMadeGood = 5.96,
+    CourseMadeGood = 324.044,
+    UseHeightmap = false
+  },
+  ["2024-02-18T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.307495,
+    Latitude = 33.435248,
+    Altitude = 0,
+    SpeedMadeGood = 6.31,
+    CourseMadeGood = 318.066,
+    UseHeightmap = false
+  },
+  ["2024-02-18T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.479085,
+    Latitude = 33.575757,
+    Altitude = 0,
+    SpeedMadeGood = 6.29,
+    CourseMadeGood = 316.183,
+    UseHeightmap = false
+  },
+  ["2024-02-18T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.685013,
+    Latitude = 33.677405,
+    Altitude = 0,
+    SpeedMadeGood = 6.32,
+    CourseMadeGood = 301.307,
+    UseHeightmap = false
+  },
+  ["2024-02-18T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.88022,
+    Latitude = 33.790483,
+    Altitude = 0,
+    SpeedMadeGood = 5.85,
+    CourseMadeGood = 304.135,
+    UseHeightmap = false
+  },
+  ["2024-02-18T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.948465,
+    Latitude = 33.926232,
+    Altitude = 0,
+    SpeedMadeGood = 6.06,
+    CourseMadeGood = 295.441,
+    UseHeightmap = false
+  },
+  ["2024-02-18T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.152912,
+    Latitude = 34.023123,
+    Altitude = 0,
+    SpeedMadeGood = 5.95,
+    CourseMadeGood = 297.235,
+    UseHeightmap = false
+  },
+  ["2024-02-18T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.366338,
+    Latitude = 34.096143,
+    Altitude = 0,
+    SpeedMadeGood = 5.76,
+    CourseMadeGood = 285.186,
+    UseHeightmap = false
+  },
+  ["2024-02-18T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.591142,
+    Latitude = 34.14728,
+    Altitude = 0,
+    SpeedMadeGood = 6.22,
+    CourseMadeGood = 285.513,
+    UseHeightmap = false
+  },
+  ["2024-02-18T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.822477,
+    Latitude = 34.19993,
+    Altitude = 0,
+    SpeedMadeGood = 6.02,
+    CourseMadeGood = 285.99,
+    UseHeightmap = false
+  },
+  ["2024-02-18T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.05469,
+    Latitude = 34.209387,
+    Altitude = 0,
+    SpeedMadeGood = 5.81,
+    CourseMadeGood = 267.942,
+    UseHeightmap = false
+  },
+  ["2024-02-19T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.291085,
+    Latitude = 34.211308,
+    Altitude = 0,
+    SpeedMadeGood = 6.18,
+    CourseMadeGood = 268.939,
+    UseHeightmap = false
+  },
+  ["2024-02-19T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.526045,
+    Latitude = 34.217085,
+    Altitude = 0,
+    SpeedMadeGood = 5.71,
+    CourseMadeGood = 272.224,
+    UseHeightmap = false
+  },
+  ["2024-02-19T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.735272,
+    Latitude = 34.166615,
+    Altitude = 0,
+    SpeedMadeGood = 5.56,
+    CourseMadeGood = 184.752,
+    UseHeightmap = false
+  },
+  ["2024-02-19T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.750332,
+    Latitude = 34.117068,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 337.42,
+    UseHeightmap = false
+  },
+  ["2024-02-19T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.745792,
+    Latitude = 34.10977,
+    Altitude = 0,
+    SpeedMadeGood = 0.72,
+    CourseMadeGood = 125.804,
+    UseHeightmap = false
+  },
+  ["2024-02-19T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.744678,
+    Latitude = 34.107072,
+    Altitude = 0,
+    SpeedMadeGood = 0.5,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-19T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.747562,
+    Latitude = 34.085113,
+    Altitude = 0,
+    SpeedMadeGood = 1.06,
+    CourseMadeGood = 219.761,
+    UseHeightmap = false
+  },
+  ["2024-02-19T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.750497,
+    Latitude = 34.071955,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-19T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.751013,
+    Latitude = 34.088688,
+    Altitude = 0,
+    SpeedMadeGood = 1.2,
+    CourseMadeGood = 4.756,
+    UseHeightmap = false
+  },
+  ["2024-02-19T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.75225,
+    Latitude = 34.116908,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 320.249,
+    UseHeightmap = false
+  },
+  ["2024-02-19T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.752225,
+    Latitude = 34.116915,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 51.286,
+    UseHeightmap = false
+  },
+  ["2024-02-19T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.752235,
+    Latitude = 34.116877,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 29.007,
+    UseHeightmap = false
+  },
+  ["2024-02-19T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.752228,
+    Latitude = 34.116867,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-19T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.752028,
+    Latitude = 34.117153,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-19T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.749397,
+    Latitude = 34.118335,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-19T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.749353,
+    Latitude = 34.118352,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 219.75,
+    UseHeightmap = false
+  },
+  ["2024-02-19T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.749365,
+    Latitude = 34.118358,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 121.013,
+    UseHeightmap = false
+  },
+  ["2024-02-19T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.749192,
+    Latitude = 34.117815,
+    Altitude = 0,
+    SpeedMadeGood = 0.78,
+    CourseMadeGood = 166.633,
+    UseHeightmap = false
+  },
+  ["2024-02-19T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.742835,
+    Latitude = 34.09552,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-19T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.740802,
+    Latitude = 34.09459,
+    Altitude = 0,
+    SpeedMadeGood = 0.91,
+    CourseMadeGood = 207.473,
+    UseHeightmap = false
+  },
+  ["2024-02-19T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.743982,
+    Latitude = 34.064403,
+    Altitude = 0,
+    SpeedMadeGood = 1.1,
+    CourseMadeGood = 219.768,
+    UseHeightmap = false
+  },
+  ["2024-02-19T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.746557,
+    Latitude = 34.042465,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 231.311,
+    UseHeightmap = false
+  },
+  ["2024-02-19T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.746563,
+    Latitude = 34.042465,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 320.224,
+    UseHeightmap = false
+  },
+  ["2024-02-19T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.753113,
+    Latitude = 33.986898,
+    Altitude = 0,
+    SpeedMadeGood = 2.44,
+    CourseMadeGood = 177.926,
+    UseHeightmap = false
+  },
+  ["2024-02-20T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.760922,
+    Latitude = 33.903612,
+    Altitude = 0,
+    SpeedMadeGood = 2.58,
+    CourseMadeGood = 192.812,
+    UseHeightmap = false
+  },
+  ["2024-02-20T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.7712,
+    Latitude = 33.824015,
+    Altitude = 0,
+    SpeedMadeGood = 2.56,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.782843,
+    Latitude = 33.744588,
+    Altitude = 0,
+    SpeedMadeGood = 2.67,
+    CourseMadeGood = 184.549,
+    UseHeightmap = false
+  },
+  ["2024-02-20T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.797823,
+    Latitude = 33.679353,
+    Altitude = 0,
+    SpeedMadeGood = 1.94,
+    CourseMadeGood = 250.26,
+    UseHeightmap = false
+  },
+  ["2024-02-20T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.803227,
+    Latitude = 33.677817,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 59.118,
+    UseHeightmap = false
+  },
+  ["2024-02-20T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.79812,
+    Latitude = 33.719808,
+    Altitude = 0,
+    SpeedMadeGood = 6.32,
+    CourseMadeGood = 11.375,
+    UseHeightmap = false
+  },
+  ["2024-02-20T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.754053,
+    Latitude = 33.916372,
+    Altitude = 0,
+    SpeedMadeGood = 6.7,
+    CourseMadeGood = 16.039,
+    UseHeightmap = false
+  },
+  ["2024-02-20T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.692475,
+    Latitude = 34.10459,
+    Altitude = 0,
+    SpeedMadeGood = 2.13,
+    CourseMadeGood = 308.71,
+    UseHeightmap = false
+  },
+  ["2024-02-20T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.712327,
+    Latitude = 34.092677,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 344.5,
+    UseHeightmap = false
+  },
+  ["2024-02-20T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.71233,
+    Latitude = 34.092678,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 39.759,
+    UseHeightmap = false
+  },
+  ["2024-02-20T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.682267,
+    Latitude = 34.105222,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T11:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.678465,
+    Latitude = 34.105275,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 39.755,
+    UseHeightmap = false
+  },
+  ["2024-02-20T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.678467,
+    Latitude = 34.105305,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.678048,
+    Latitude = 34.107227,
+    Altitude = 0,
+    SpeedMadeGood = 0.39,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T14:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.679667,
+    Latitude = 34.10724,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 140.246,
+    UseHeightmap = false
+  },
+  ["2024-02-20T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.679667,
+    Latitude = 34.107233,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.681035,
+    Latitude = 34.107118,
+    Altitude = 0,
+    SpeedMadeGood = 0.92,
+    CourseMadeGood = 283.52,
+    UseHeightmap = false
+  },
+  ["2024-02-20T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.699622,
+    Latitude = 34.104823,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.674883,
+    Latitude = 34.10412,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 219.755,
+    UseHeightmap = false
+  },
+  ["2024-02-20T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.67186,
+    Latitude = 34.104047,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 140.245,
+    UseHeightmap = false
+  },
+  ["2024-02-20T20:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.67598,
+    Latitude = 34.10395,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.706158,
+    Latitude = 34.101978,
+    Altitude = 0,
+    SpeedMadeGood = 1.02,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-20T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.733017,
+    Latitude = 34.10025,
+    Altitude = 0,
+    SpeedMadeGood = 1.84,
+    CourseMadeGood = 295.055,
+    UseHeightmap = false
+  },
+  ["2024-02-20T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.82589,
+    Latitude = 34.099153,
+    Altitude = 0,
+    SpeedMadeGood = 1.11,
+    CourseMadeGood = 78.671,
+    UseHeightmap = false
+  },
+  ["2024-02-21T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.725422,
+    Latitude = 34.107867,
+    Altitude = 0,
+    SpeedMadeGood = 2.35,
+    CourseMadeGood = 76.48,
+    UseHeightmap = false
+  },
+  ["2024-02-21T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.622267,
+    Latitude = 34.116623,
+    Altitude = 0,
+    SpeedMadeGood = 2.64,
+    CourseMadeGood = 78.289,
+    UseHeightmap = false
+  },
+  ["2024-02-21T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.548985,
+    Latitude = 34.12549,
+    Altitude = 0,
+    SpeedMadeGood = 2.12,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-21T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.628748,
+    Latitude = 34.12437,
+    Altitude = 0,
+    SpeedMadeGood = 0.78,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-21T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.63542,
+    Latitude = 34.128505,
+    Altitude = 0,
+    SpeedMadeGood = 0.51,
+    CourseMadeGood = 340.384,
+    UseHeightmap = false
+  },
+  ["2024-02-21T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.645443,
+    Latitude = 34.132997,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 219.745,
+    UseHeightmap = false
+  },
+  ["2024-02-21T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.66819,
+    Latitude = 34.140745,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-21T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.668178,
+    Latitude = 34.140758,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-21T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.668177,
+    Latitude = 34.140745,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 140.257,
+    UseHeightmap = false
+  },
+  ["2024-02-21T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.718563,
+    Latitude = 34.141678,
+    Altitude = 0,
+    SpeedMadeGood = 5.9,
+    CourseMadeGood = 260.89,
+    UseHeightmap = false
+  },
+  ["2024-02-21T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.610615,
+    Latitude = 34.128737,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 202.577,
+    UseHeightmap = false
+  },
+  ["2024-02-21T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.609632,
+    Latitude = 34.128592,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 58.984,
+    UseHeightmap = false
+  },
+  ["2024-02-21T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.605013,
+    Latitude = 34.129397,
+    Altitude = 0,
+    SpeedMadeGood = 1.24,
+    CourseMadeGood = 60.97,
+    UseHeightmap = false
+  },
+  ["2024-02-21T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.5816,
+    Latitude = 34.206365,
+    Altitude = 0,
+    SpeedMadeGood = 5.89,
+    CourseMadeGood = 13.996,
+    UseHeightmap = false
+  },
+  ["2024-02-21T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.542843,
+    Latitude = 34.395092,
+    Altitude = 0,
+    SpeedMadeGood = 4.54,
+    CourseMadeGood = 15.833,
+    UseHeightmap = false
+  },
+  ["2024-02-21T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.521728,
+    Latitude = 34.462723,
+    Altitude = 0,
+    SpeedMadeGood = 0.37,
+    CourseMadeGood = 140.366,
+    UseHeightmap = false
+  },
+  ["2024-02-21T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.589148,
+    Latitude = 34.499718,
+    Altitude = 0,
+    SpeedMadeGood = 5.77,
+    CourseMadeGood = 304.871,
+    UseHeightmap = false
+  },
+  ["2024-02-21T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.684327,
+    Latitude = 34.563497,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 320.4,
+    UseHeightmap = false
+  },
+  ["2024-02-21T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.772843,
+    Latitude = 34.602285,
+    Altitude = 0,
+    SpeedMadeGood = 6.21,
+    CourseMadeGood = 336.259,
+    UseHeightmap = false
+  },
+  ["2024-02-21T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.863927,
+    Latitude = 34.779907,
+    Altitude = 0,
+    SpeedMadeGood = 6.11,
+    CourseMadeGood = 343.457,
+    UseHeightmap = false
+  },
+  ["2024-02-21T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.94882,
+    Latitude = 34.955388,
+    Altitude = 0,
+    SpeedMadeGood = 5.93,
+    CourseMadeGood = 336.031,
+    UseHeightmap = false
+  },
+  ["2024-02-21T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.033168,
+    Latitude = 35.129368,
+    Altitude = 0,
+    SpeedMadeGood = 5.57,
+    CourseMadeGood = 338.081,
+    UseHeightmap = false
+  },
+  ["2024-02-21T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.090783,
+    Latitude = 35.309465,
+    Altitude = 0,
+    SpeedMadeGood = 5.57,
+    CourseMadeGood = 344.427,
+    UseHeightmap = false
+  },
+  ["2024-02-21T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.141688,
+    Latitude = 35.495728,
+    Altitude = 0,
+    SpeedMadeGood = 5.78,
+    CourseMadeGood = 346.726,
+    UseHeightmap = false
+  },
+  ["2024-02-22T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.167678,
+    Latitude = 35.578847,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-22T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.104495,
+    Latitude = 35.496258,
+    Altitude = 0,
+    SpeedMadeGood = 6.11,
+    CourseMadeGood = 129.456,
+    UseHeightmap = false
+  },
+  ["2024-02-22T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.056707,
+    Latitude = 35.474802,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 202.245,
+    UseHeightmap = false
+  },
+  ["2024-02-22T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.008737,
+    Latitude = 35.400877,
+    Altitude = 0,
+    SpeedMadeGood = 6.46,
+    CourseMadeGood = 119.791,
+    UseHeightmap = false
+  },
+  ["2024-02-22T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.925538,
+    Latitude = 35.359705,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 208.64,
+    UseHeightmap = false
+  },
+  ["2024-02-22T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.987505,
+    Latitude = 35.231095,
+    Altitude = 0,
+    SpeedMadeGood = 6.45,
+    CourseMadeGood = 199.599,
+    UseHeightmap = false
+  },
+  ["2024-02-22T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.808867,
+    Latitude = 35.106605,
+    Altitude = 0,
+    SpeedMadeGood = 6.41,
+    CourseMadeGood = 126.767,
+    UseHeightmap = false
+  },
+  ["2024-02-22T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.77236,
+    Latitude = 35.083355,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 309.043,
+    UseHeightmap = false
+  },
+  ["2024-02-22T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.845462,
+    Latitude = 34.913083,
+    Altitude = 0,
+    SpeedMadeGood = 6.38,
+    CourseMadeGood = 199.671,
+    UseHeightmap = false
+  },
+  ["2024-02-22T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.89232,
+    Latitude = 34.71168,
+    Altitude = 0,
+    SpeedMadeGood = 6.33,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-22T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.804535,
+    Latitude = 34.559167,
+    Altitude = 0,
+    SpeedMadeGood = 6.02,
+    CourseMadeGood = 110.993,
+    UseHeightmap = false
+  },
+  ["2024-02-22T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.592442,
+    Latitude = 34.465115,
+    Altitude = 0,
+    SpeedMadeGood = 5.95,
+    CourseMadeGood = 127.46,
+    UseHeightmap = false
+  },
+  ["2024-02-22T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.393513,
+    Latitude = 34.364543,
+    Altitude = 0,
+    SpeedMadeGood = 6.09,
+    CourseMadeGood = 117.203,
+    UseHeightmap = false
+  },
+  ["2024-02-22T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.168173,
+    Latitude = 34.309342,
+    Altitude = 0,
+    SpeedMadeGood = 6.11,
+    CourseMadeGood = 100.503,
+    UseHeightmap = false
+  },
+  ["2024-02-22T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.093668,
+    Latitude = 34.308658,
+    Altitude = 0,
+    SpeedMadeGood = 5.99,
+    CourseMadeGood = 294.197,
+    UseHeightmap = false
+  },
+  ["2024-02-22T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.31968,
+    Latitude = 34.387308,
+    Altitude = 0,
+    SpeedMadeGood = 6.59,
+    CourseMadeGood = 292.842,
+    UseHeightmap = false
+  },
+  ["2024-02-22T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.40634,
+    Latitude = 34.421682,
+    Altitude = 0,
+    SpeedMadeGood = 0.3,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-22T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.290972,
+    Latitude = 34.378283,
+    Altitude = 0,
+    SpeedMadeGood = 6.21,
+    CourseMadeGood = 116.681,
+    UseHeightmap = false
+  },
+  ["2024-02-22T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.07294,
+    Latitude = 34.295275,
+    Altitude = 0,
+    SpeedMadeGood = 6.34,
+    CourseMadeGood = 115.913,
+    UseHeightmap = false
+  },
+  ["2024-02-22T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.014587,
+    Latitude = 34.274037,
+    Altitude = 0,
+    SpeedMadeGood = 1.19,
+    CourseMadeGood = 289.869,
+    UseHeightmap = false
+  },
+  ["2024-02-22T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.048063,
+    Latitude = 34.281522,
+    Altitude = 0,
+    SpeedMadeGood = 0.77,
+    CourseMadeGood = 279.765,
+    UseHeightmap = false
+  },
+  ["2024-02-22T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.074378,
+    Latitude = 34.287893,
+    Altitude = 0,
+    SpeedMadeGood = 0.47,
+    CourseMadeGood = 256.452,
+    UseHeightmap = false
+  },
+  ["2024-02-22T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.014123,
+    Latitude = 34.273853,
+    Altitude = 0,
+    SpeedMadeGood = 2.55,
+    CourseMadeGood = 105.535,
+    UseHeightmap = false
+  },
+  ["2024-02-22T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.921035,
+    Latitude = 34.287493,
+    Altitude = 0,
+    SpeedMadeGood = 2.61,
+    CourseMadeGood = 31.903,
+    UseHeightmap = false
+  },
+  ["2024-02-23T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.971283,
+    Latitude = 34.347885,
+    Altitude = 0,
+    SpeedMadeGood = 2.58,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-23T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.018455,
+    Latitude = 34.27497,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 219.698,
+    UseHeightmap = false
+  },
+  ["2024-02-23T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.018478,
+    Latitude = 34.274952,
+    Altitude = 0,
+    SpeedMadeGood = 0.05,
+    CourseMadeGood = 39.698,
+    UseHeightmap = false
+  },
+  ["2024-02-23T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.018453,
+    Latitude = 34.27496,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 320.302,
+    UseHeightmap = false
+  },
+  ["2024-02-23T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.092813,
+    Latitude = 34.291173,
+    Altitude = 0,
+    SpeedMadeGood = 6.24,
+    CourseMadeGood = 286.251,
+    UseHeightmap = false
+  },
+  ["2024-02-23T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.324145,
+    Latitude = 34.343333,
+    Altitude = 0,
+    SpeedMadeGood = 6.42,
+    CourseMadeGood = 289.793,
+    UseHeightmap = false
+  },
+  ["2024-02-23T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.543127,
+    Latitude = 34.432043,
+    Altitude = 0,
+    SpeedMadeGood = 6.16,
+    CourseMadeGood = 311.768,
+    UseHeightmap = false
+  },
+  ["2024-02-23T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.725433,
+    Latitude = 34.55997,
+    Altitude = 0,
+    SpeedMadeGood = 6.08,
+    CourseMadeGood = 309.867,
+    UseHeightmap = false
+  },
+  ["2024-02-23T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.765483,
+    Latitude = 34.730385,
+    Altitude = 0,
+    SpeedMadeGood = 6.2,
+    CourseMadeGood = 7.103,
+    UseHeightmap = false
+  },
+  ["2024-02-23T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.73671,
+    Latitude = 34.880872,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 67.977,
+    UseHeightmap = false
+  },
+  ["2024-02-23T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.736703,
+    Latitude = 34.880845,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-23T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.714367,
+    Latitude = 34.722005,
+    Altitude = 0,
+    SpeedMadeGood = 6.17,
+    CourseMadeGood = 174.001,
+    UseHeightmap = false
+  },
+  ["2024-02-23T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.710345,
+    Latitude = 34.691375,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-23T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.81061,
+    Latitude = 34.553913,
+    Altitude = 0,
+    SpeedMadeGood = 6.35,
+    CourseMadeGood = 197.339,
+    UseHeightmap = false
+  },
+  ["2024-02-23T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.95964,
+    Latitude = 34.42434,
+    Altitude = 0,
+    SpeedMadeGood = 6.31,
+    CourseMadeGood = 218.373,
+    UseHeightmap = false
+  },
+  ["2024-02-23T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.109688,
+    Latitude = 34.264337,
+    Altitude = 0,
+    SpeedMadeGood = 6.2,
+    CourseMadeGood = 217.045,
+    UseHeightmap = false
+  },
+  ["2024-02-23T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.248572,
+    Latitude = 34.101232,
+    Altitude = 0,
+    SpeedMadeGood = 6.21,
+    CourseMadeGood = 217.16,
+    UseHeightmap = false
+  },
+  ["2024-02-23T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.384203,
+    Latitude = 33.934387,
+    Altitude = 0,
+    SpeedMadeGood = 6.28,
+    CourseMadeGood = 214.233,
+    UseHeightmap = false
+  },
+  ["2024-02-23T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.499483,
+    Latitude = 33.799863,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 22.657,
+    UseHeightmap = false
+  },
+  ["2024-02-23T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.50093,
+    Latitude = 33.80143,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 333.394,
+    UseHeightmap = false
+  },
+  ["2024-02-23T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.504128,
+    Latitude = 33.805735,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 219.855,
+    UseHeightmap = false
+  },
+  ["2024-02-23T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.504192,
+    Latitude = 33.80589,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 295.602,
+    UseHeightmap = false
+  },
+  ["2024-02-23T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.515058,
+    Latitude = 33.819578,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 111.77,
+    UseHeightmap = false
+  },
+  ["2024-02-23T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.526012,
+    Latitude = 33.836473,
+    Altitude = 0,
+    SpeedMadeGood = 0.93,
+    CourseMadeGood = 314.96,
+    UseHeightmap = false
+  },
+  ["2024-02-24T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.53821,
+    Latitude = 33.85677,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 320.162,
+    UseHeightmap = false
+  },
+  ["2024-02-24T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.552708,
+    Latitude = 33.878062,
+    Altitude = 0,
+    SpeedMadeGood = 1.1,
+    CourseMadeGood = 323.877,
+    UseHeightmap = false
+  },
+  ["2024-02-24T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.55376,
+    Latitude = 33.879583,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.55384,
+    Latitude = 33.879507,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.569238,
+    Latitude = 33.878628,
+    Altitude = 0,
+    SpeedMadeGood = 0.93,
+    CourseMadeGood = 263.163,
+    UseHeightmap = false
+  },
+  ["2024-02-24T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.52338,
+    Latitude = 33.83546,
+    Altitude = 0,
+    SpeedMadeGood = 6.19,
+    CourseMadeGood = 129.991,
+    UseHeightmap = false
+  },
+  ["2024-02-24T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.479982,
+    Latitude = 33.788632,
+    Altitude = 0,
+    SpeedMadeGood = 0.69,
+    CourseMadeGood = 300.915,
+    UseHeightmap = false
+  },
+  ["2024-02-24T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.508475,
+    Latitude = 33.796883,
+    Altitude = 0,
+    SpeedMadeGood = 0.72,
+    CourseMadeGood = 340.313,
+    UseHeightmap = false
+  },
+  ["2024-02-24T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.517225,
+    Latitude = 33.821643,
+    Altitude = 0,
+    SpeedMadeGood = 0.91,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.516943,
+    Latitude = 33.838442,
+    Altitude = 0,
+    SpeedMadeGood = 0.67,
+    CourseMadeGood = 68.225,
+    UseHeightmap = false
+  },
+  ["2024-02-24T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.49911,
+    Latitude = 33.757932,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.499098,
+    Latitude = 33.757918,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.492642,
+    Latitude = 33.74439,
+    Altitude = 0,
+    SpeedMadeGood = 1.43,
+    CourseMadeGood = 116.508,
+    UseHeightmap = false
+  },
+  ["2024-02-24T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.480895,
+    Latitude = 33.739697,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 140.123,
+    UseHeightmap = false
+  },
+  ["2024-02-24T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.48092,
+    Latitude = 33.739707,
+    Altitude = 0,
+    SpeedMadeGood = 0.3,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.480922,
+    Latitude = 33.7397,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.486198,
+    Latitude = 33.728862,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 213.76,
+    UseHeightmap = false
+  },
+  ["2024-02-24T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.484515,
+    Latitude = 33.726098,
+    Altitude = 0,
+    SpeedMadeGood = 0.36,
+    CourseMadeGood = 103.461,
+    UseHeightmap = false
+  },
+  ["2024-02-24T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.505517,
+    Latitude = 33.718637,
+    Altitude = 0,
+    SpeedMadeGood = 0.65,
+    CourseMadeGood = 248.253,
+    UseHeightmap = false
+  },
+  ["2024-02-24T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.497653,
+    Latitude = 33.707963,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-24T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.497203,
+    Latitude = 33.70775,
+    Altitude = 0,
+    SpeedMadeGood = 0.69,
+    CourseMadeGood = 115.576,
+    UseHeightmap = false
+  },
+  ["2024-02-24T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.427285,
+    Latitude = 33.742795,
+    Altitude = 0,
+    SpeedMadeGood = 2.61,
+    CourseMadeGood = 20.793,
+    UseHeightmap = false
+  },
+  ["2024-02-24T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.433297,
+    Latitude = 33.818257,
+    Altitude = 0,
+    SpeedMadeGood = 2.75,
+    CourseMadeGood = 320.149,
+    UseHeightmap = false
+  },
+  ["2024-02-24T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.523868,
+    Latitude = 33.840765,
+    Altitude = 0,
+    SpeedMadeGood = 2.53,
+    CourseMadeGood = 253.867,
+    UseHeightmap = false
+  },
+  ["2024-02-25T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.57978,
+    Latitude = 33.771397,
+    Altitude = 0,
+    SpeedMadeGood = 3.14,
+    CourseMadeGood = 183.822,
+    UseHeightmap = false
+  },
+  ["2024-02-25T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.518892,
+    Latitude = 33.709493,
+    Altitude = 0,
+    SpeedMadeGood = 2.36,
+    CourseMadeGood = 103.997,
+    UseHeightmap = false
+  },
+  ["2024-02-25T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.490708,
+    Latitude = 33.667422,
+    Altitude = 0,
+    SpeedMadeGood = 0.55,
+    CourseMadeGood = 170.506,
+    UseHeightmap = false
+  },
+  ["2024-02-25T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.49055,
+    Latitude = 33.66851,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.503773,
+    Latitude = 33.681962,
+    Altitude = 0,
+    SpeedMadeGood = 0.71,
+    CourseMadeGood = 310.511,
+    UseHeightmap = false
+  },
+  ["2024-02-25T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.51023,
+    Latitude = 33.666228,
+    Altitude = 0,
+    SpeedMadeGood = 1.55,
+    CourseMadeGood = 187.33,
+    UseHeightmap = false
+  },
+  ["2024-02-25T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.498077,
+    Latitude = 33.643515,
+    Altitude = 0,
+    SpeedMadeGood = 0.93,
+    CourseMadeGood = 47.079,
+    UseHeightmap = false
+  },
+  ["2024-02-25T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.495048,
+    Latitude = 33.66031,
+    Altitude = 0,
+    SpeedMadeGood = 0.57,
+    CourseMadeGood = 300.876,
+    UseHeightmap = false
+  },
+  ["2024-02-25T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.506645,
+    Latitude = 33.661305,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.498835,
+    Latitude = 33.824907,
+    Altitude = 0,
+    SpeedMadeGood = 6.15,
+    CourseMadeGood = 8.949,
+    UseHeightmap = false
+  },
+  ["2024-02-25T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.500602,
+    Latitude = 34.023185,
+    Altitude = 0,
+    SpeedMadeGood = 6.1,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.500632,
+    Latitude = 34.050043,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.500645,
+    Latitude = 34.050035,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.49354,
+    Latitude = 34.047262,
+    Altitude = 0,
+    SpeedMadeGood = 0.51,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.49308,
+    Latitude = 34.048202,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 219.774,
+    UseHeightmap = false
+  },
+  ["2024-02-25T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.493112,
+    Latitude = 34.048233,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.4931,
+    Latitude = 34.048208,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 111.824,
+    UseHeightmap = false
+  },
+  ["2024-02-25T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.498087,
+    Latitude = 34.044555,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 231.31,
+    UseHeightmap = false
+  },
+  ["2024-02-25T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.498073,
+    Latitude = 34.044558,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 320.225,
+    UseHeightmap = false
+  },
+  ["2024-02-25T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.498077,
+    Latitude = 34.044537,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.498083,
+    Latitude = 34.044568,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-25T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.523773,
+    Latitude = 34.045503,
+    Altitude = 0,
+    SpeedMadeGood = 0.95,
+    CourseMadeGood = 283.51,
+    UseHeightmap = false
+  },
+  ["2024-02-25T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.556823,
+    Latitude = 34.043532,
+    Altitude = 0,
+    SpeedMadeGood = 0.93,
+    CourseMadeGood = 256.49,
+    UseHeightmap = false
+  },
+  ["2024-02-25T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.50472,
+    Latitude = 34.04008,
+    Altitude = 0,
+    SpeedMadeGood = 2.03,
+    CourseMadeGood = 96.232,
+    UseHeightmap = false
+  },
+  ["2024-02-26T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.497457,
+    Latitude = 34.040367,
+    Altitude = 0,
+    SpeedMadeGood = 0.37,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-26T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.49748,
+    Latitude = 34.040398,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 51.311,
+    UseHeightmap = false
+  },
+  ["2024-02-26T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.490472,
+    Latitude = 34.042412,
+    Altitude = 0,
+    SpeedMadeGood = 0.51,
+    CourseMadeGood = 76.491,
+    UseHeightmap = false
+  },
+  ["2024-02-26T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.489947,
+    Latitude = 34.042525,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-26T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.498952,
+    Latitude = 34.038545,
+    Altitude = 0,
+    SpeedMadeGood = 0.73,
+    CourseMadeGood = 224.971,
+    UseHeightmap = false
+  },
+  ["2024-02-26T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.452902,
+    Latitude = 34.055333,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 219.771,
+    UseHeightmap = false
+  },
+  ["2024-02-26T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.469217,
+    Latitude = 34.049003,
+    Altitude = 0,
+    SpeedMadeGood = 0.78,
+    CourseMadeGood = 239.008,
+    UseHeightmap = false
+  },
+  ["2024-02-26T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.501848,
+    Latitude = 34.034913,
+    Altitude = 0,
+    SpeedMadeGood = 1.11,
+    CourseMadeGood = 234.22,
+    UseHeightmap = false
+  },
+  ["2024-02-26T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.538485,
+    Latitude = 34.023672,
+    Altitude = 0,
+    SpeedMadeGood = 6.17,
+    CourseMadeGood = 255.057,
+    UseHeightmap = false
+  },
+  ["2024-02-26T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.47165,
+    Latitude = 34.028278,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 320.219,
+    UseHeightmap = false
+  },
+  ["2024-02-26T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.471447,
+    Latitude = 34.028587,
+    Altitude = 0,
+    SpeedMadeGood = 0.39,
+    CourseMadeGood = 320.22,
+    UseHeightmap = false
+  },
+  ["2024-02-26T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.471438,
+    Latitude = 34.028558,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 239.014,
+    UseHeightmap = false
+  },
+  ["2024-02-26T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.471273,
+    Latitude = 34.028547,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-26T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.464487,
+    Latitude = 34.034652,
+    Altitude = 0,
+    SpeedMadeGood = 0.51,
+    CourseMadeGood = 54.22,
+    UseHeightmap = false
+  },
+  ["2024-02-26T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.462117,
+    Latitude = 34.035155,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-26T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.469488,
+    Latitude = 34.035425,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 164.49,
+    UseHeightmap = false
+  },
+  ["2024-02-26T16:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.469507,
+    Latitude = 34.035427,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 59.012,
+    UseHeightmap = false
+  },
+  ["2024-02-26T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.469487,
+    Latitude = 34.035415,
+    Altitude = 0,
+    SpeedMadeGood = 0.56,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-26T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.469488,
+    Latitude = 34.035417,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 68.179,
+    UseHeightmap = false
+  },
+  ["2024-02-26T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.46822,
+    Latitude = 34.025813,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-26T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.473835,
+    Latitude = 34.003147,
+    Altitude = 0,
+    SpeedMadeGood = 5.24,
+    CourseMadeGood = 192.46,
+    UseHeightmap = false
+  },
+  ["2024-02-26T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.461435,
+    Latitude = 33.969162,
+    Altitude = 0,
+    SpeedMadeGood = 2.67,
+    CourseMadeGood = 102.097,
+    UseHeightmap = false
+  },
+  ["2024-02-26T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.385183,
+    Latitude = 34.017778,
+    Altitude = 0,
+    SpeedMadeGood = 2.71,
+    CourseMadeGood = 20.732,
+    UseHeightmap = false
+  },
+  ["2024-02-26T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.419915,
+    Latitude = 34.092477,
+    Altitude = 0,
+    SpeedMadeGood = 2.66,
+    CourseMadeGood = 304.191,
+    UseHeightmap = false
+  },
+  ["2024-02-27T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.505933,
+    Latitude = 34.089713,
+    Altitude = 0,
+    SpeedMadeGood = 2.15,
+    CourseMadeGood = 236.533,
+    UseHeightmap = false
+  },
+  ["2024-02-27T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.539693,
+    Latitude = 34.017355,
+    Altitude = 0,
+    SpeedMadeGood = 2.89,
+    CourseMadeGood = 170.545,
+    UseHeightmap = false
+  },
+  ["2024-02-27T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.458163,
+    Latitude = 33.96944,
+    Altitude = 0,
+    SpeedMadeGood = 2.23,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-27T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.433357,
+    Latitude = 34.046792,
+    Altitude = 0,
+    SpeedMadeGood = 0.15,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-27T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.432443,
+    Latitude = 34.047248,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-27T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.422477,
+    Latitude = 34.003768,
+    Altitude = 0,
+    SpeedMadeGood = 4.33,
+    CourseMadeGood = 174.057,
+    UseHeightmap = false
+  },
+  ["2024-02-27T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.356192,
+    Latitude = 34.001182,
+    Altitude = 0,
+    SpeedMadeGood = 2.49,
+    CourseMadeGood = 54.645,
+    UseHeightmap = false
+  },
+  ["2024-02-27T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.344477,
+    Latitude = 34.076223,
+    Altitude = 0,
+    SpeedMadeGood = 2.72,
+    CourseMadeGood = 326.348,
+    UseHeightmap = false
+  },
+  ["2024-02-27T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.432498,
+    Latitude = 34.111863,
+    Altitude = 0,
+    SpeedMadeGood = 2.52,
+    CourseMadeGood = 262.91,
+    UseHeightmap = false
+  },
+  ["2024-02-27T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.481023,
+    Latitude = 34.053105,
+    Altitude = 0,
+    SpeedMadeGood = 2.99,
+    CourseMadeGood = 158.293,
+    UseHeightmap = false
+  },
+  ["2024-02-27T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.425597,
+    Latitude = 34.042168,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 39.776,
+    UseHeightmap = false
+  },
+  ["2024-02-27T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.477457,
+    Latitude = 34.054407,
+    Altitude = 0,
+    SpeedMadeGood = 5.56,
+    CourseMadeGood = 286.718,
+    UseHeightmap = false
+  },
+  ["2024-02-27T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.432307,
+    Latitude = 34.044125,
+    Altitude = 0,
+    SpeedMadeGood = 0.81,
+    CourseMadeGood = 71.056,
+    UseHeightmap = false
+  },
+  ["2024-02-27T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.422223,
+    Latitude = 34.053337,
+    Altitude = 0,
+    SpeedMadeGood = 1.0,
+    CourseMadeGood = 160.368,
+    UseHeightmap = false
+  },
+  ["2024-02-27T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.421753,
+    Latitude = 34.051025,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 22.596,
+    UseHeightmap = false
+  },
+  ["2024-02-27T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.421753,
+    Latitude = 34.051038,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-27T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.421747,
+    Latitude = 34.051038,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 59.007,
+    UseHeightmap = false
+  },
+  ["2024-02-27T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.421737,
+    Latitude = 34.05103,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 39.773,
+    UseHeightmap = false
+  },
+  ["2024-02-27T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.423387,
+    Latitude = 34.052387,
+    Altitude = 0,
+    SpeedMadeGood = 0.78,
+    CourseMadeGood = 320.228,
+    UseHeightmap = false
+  },
+  ["2024-02-27T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.432898,
+    Latitude = 34.061693,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 239.004,
+    UseHeightmap = false
+  },
+  ["2024-02-27T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.424758,
+    Latitude = 34.06452,
+    Altitude = 0,
+    SpeedMadeGood = 1.21,
+    CourseMadeGood = 30.729,
+    UseHeightmap = false
+  },
+  ["2024-02-27T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.402947,
+    Latitude = 34.076498,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 121.001,
+    UseHeightmap = false
+  },
+  ["2024-02-27T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.402947,
+    Latitude = 34.076485,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 337.41,
+    UseHeightmap = false
+  },
+  ["2024-02-27T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.402955,
+    Latitude = 34.076492,
+    Altitude = 0,
+    SpeedMadeGood = 0.52,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-28T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.402947,
+    Latitude = 34.076518,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 22.59,
+    UseHeightmap = false
+  },
+  ["2024-02-28T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.402925,
+    Latitude = 34.076518,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 238.999,
+    UseHeightmap = false
+  },
+  ["2024-02-28T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.402928,
+    Latitude = 34.0765,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-28T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.403023,
+    Latitude = 34.076472,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 168.248,
+    UseHeightmap = false
+  },
+  ["2024-02-28T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.405307,
+    Latitude = 34.077393,
+    Altitude = 0,
+    SpeedMadeGood = 1.08,
+    CourseMadeGood = 295.674,
+    UseHeightmap = false
+  },
+  ["2024-02-28T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.420887,
+    Latitude = 34.087302,
+    Altitude = 0,
+    SpeedMadeGood = 1.01,
+    CourseMadeGood = 320.239,
+    UseHeightmap = false
+  },
+  ["2024-02-28T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.433078,
+    Latitude = 34.095768,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 51.293,
+    UseHeightmap = false
+  },
+  ["2024-02-28T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.446598,
+    Latitude = 34.104352,
+    Altitude = 0,
+    SpeedMadeGood = 0.51,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-28T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.439932,
+    Latitude = 34.114477,
+    Altitude = 0,
+    SpeedMadeGood = 5.96,
+    CourseMadeGood = 112.174,
+    UseHeightmap = false
+  },
+  ["2024-02-28T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.371105,
+    Latitude = 34.072205,
+    Altitude = 0,
+    SpeedMadeGood = 4.7,
+    CourseMadeGood = 280.883,
+    UseHeightmap = false
+  },
+  ["2024-02-28T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.40385,
+    Latitude = 34.082703,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 238.997,
+    UseHeightmap = false
+  },
+  ["2024-02-28T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.407093,
+    Latitude = 34.088597,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 39.76,
+    UseHeightmap = false
+  },
+  ["2024-02-28T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.405462,
+    Latitude = 34.08923,
+    Altitude = 0,
+    SpeedMadeGood = 0.89,
+    CourseMadeGood = 22.587,
+    UseHeightmap = false
+  },
+  ["2024-02-28T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.416425,
+    Latitude = 34.091085,
+    Altitude = 0,
+    SpeedMadeGood = 3.41,
+    CourseMadeGood = 192.172,
+    UseHeightmap = false
+  },
+  ["2024-02-28T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.477882,
+    Latitude = 33.912098,
+    Altitude = 0,
+    SpeedMadeGood = 6.27,
+    CourseMadeGood = 195.81,
+    UseHeightmap = false
+  },
+  ["2024-02-28T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.56304,
+    Latitude = 33.72005,
+    Altitude = 0,
+    SpeedMadeGood = 6.54,
+    CourseMadeGood = 196.902,
+    UseHeightmap = false
+  },
+  ["2024-02-28T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.648202,
+    Latitude = 33.520567,
+    Altitude = 0,
+    SpeedMadeGood = 6.7,
+    CourseMadeGood = 195.6,
+    UseHeightmap = false
+  },
+  ["2024-02-28T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.732775,
+    Latitude = 33.321795,
+    Altitude = 0,
+    SpeedMadeGood = 6.74,
+    CourseMadeGood = 200.214,
+    UseHeightmap = false
+  },
+  ["2024-02-28T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.81665,
+    Latitude = 33.124463,
+    Altitude = 0,
+    SpeedMadeGood = 6.02,
+    CourseMadeGood = 199.95,
+    UseHeightmap = false
+  },
+  ["2024-02-28T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.897613,
+    Latitude = 32.933583,
+    Altitude = 0,
+    SpeedMadeGood = 6.06,
+    CourseMadeGood = 201.645,
+    UseHeightmap = false
+  },
+  ["2024-02-28T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.976453,
+    Latitude = 32.746665,
+    Altitude = 0,
+    SpeedMadeGood = 5.73,
+    CourseMadeGood = 205.895,
+    UseHeightmap = false
+  },
+  ["2024-02-28T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.056205,
+    Latitude = 32.558183,
+    Altitude = 0,
+    SpeedMadeGood = 5.98,
+    CourseMadeGood = 195.764,
+    UseHeightmap = false
+  },
+  ["2024-02-28T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.136095,
+    Latitude = 32.368907,
+    Altitude = 0,
+    SpeedMadeGood = 5.65,
+    CourseMadeGood = 197.315,
+    UseHeightmap = false
+  },
+  ["2024-02-28T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.213148,
+    Latitude = 32.185207,
+    Altitude = 0,
+    SpeedMadeGood = 6.12,
+    CourseMadeGood = 198.112,
+    UseHeightmap = false
+  },
+  ["2024-02-29T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.292475,
+    Latitude = 31.996498,
+    Altitude = 0,
+    SpeedMadeGood = 5.92,
+    CourseMadeGood = 200.554,
+    UseHeightmap = false
+  },
+  ["2024-02-29T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.368292,
+    Latitude = 31.815417,
+    Altitude = 0,
+    SpeedMadeGood = 6.17,
+    CourseMadeGood = 197.55,
+    UseHeightmap = false
+  },
+  ["2024-02-29T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.44653,
+    Latitude = 31.628082,
+    Altitude = 0,
+    SpeedMadeGood = 6.31,
+    CourseMadeGood = 193.135,
+    UseHeightmap = false
+  },
+  ["2024-02-29T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.501247,
+    Latitude = 31.500002,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-02-29T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.50425,
+    Latitude = 31.506827,
+    Altitude = 0,
+    SpeedMadeGood = 0.65,
+    CourseMadeGood = 341.083,
+    UseHeightmap = false
+  },
+  ["2024-02-29T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.512768,
+    Latitude = 31.521217,
+    Altitude = 0,
+    SpeedMadeGood = 0.83,
+    CourseMadeGood = 330.27,
+    UseHeightmap = false
+  },
+  ["2024-02-29T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.5118,
+    Latitude = 31.525917,
+    Altitude = 0,
+    SpeedMadeGood = 3.2,
+    CourseMadeGood = 128.386,
+    UseHeightmap = false
+  },
+  ["2024-02-29T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.48133,
+    Latitude = 31.507138,
+    Altitude = 0,
+    SpeedMadeGood = 1.01,
+    CourseMadeGood = 306.111,
+    UseHeightmap = false
+  },
+  ["2024-02-29T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.507993,
+    Latitude = 31.523995,
+    Altitude = 0,
+    SpeedMadeGood = 0.94,
+    CourseMadeGood = 302.966,
+    UseHeightmap = false
+  },
+  ["2024-02-29T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.534857,
+    Latitude = 31.543313,
+    Altitude = 0,
+    SpeedMadeGood = 1.1,
+    CourseMadeGood = 300.278,
+    UseHeightmap = false
+  },
+  ["2024-02-29T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.522238,
+    Latitude = 31.535403,
+    Altitude = 0,
+    SpeedMadeGood = 5.88,
+    CourseMadeGood = 135.896,
+    UseHeightmap = false
+  },
+  ["2024-02-29T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.51082,
+    Latitude = 31.524137,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-02-29T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.510808,
+    Latitude = 31.524138,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 319.417,
+    UseHeightmap = false
+  },
+  ["2024-02-29T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.511177,
+    Latitude = 31.51991,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-02-29T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.515763,
+    Latitude = 31.51898,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-29T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.515742,
+    Latitude = 31.519052,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-29T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.51574,
+    Latitude = 31.519067,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 291.262,
+    UseHeightmap = false
+  },
+  ["2024-02-29T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.515737,
+    Latitude = 31.519058,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 120.271,
+    UseHeightmap = false
+  },
+  ["2024-02-29T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.515758,
+    Latitude = 31.519047,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 40.585,
+    UseHeightmap = false
+  },
+  ["2024-02-29T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.530225,
+    Latitude = 31.523607,
+    Altitude = 0,
+    SpeedMadeGood = 1.46,
+    CourseMadeGood = 139.417,
+    UseHeightmap = false
+  },
+  ["2024-02-29T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.522253,
+    Latitude = 31.516945,
+    Altitude = 0,
+    SpeedMadeGood = 0.36,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-02-29T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.524663,
+    Latitude = 31.51887,
+    Altitude = 0,
+    SpeedMadeGood = 1.17,
+    CourseMadeGood = 291.262,
+    UseHeightmap = false
+  },
+  ["2024-02-29T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.55107,
+    Latitude = 31.539787,
+    Altitude = 0,
+    SpeedMadeGood = 0.87,
+    CourseMadeGood = 324.484,
+    UseHeightmap = false
+  },
+  ["2024-02-29T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.572342,
+    Latitude = 31.559177,
+    Altitude = 0,
+    SpeedMadeGood = 0.65,
+    CourseMadeGood = 314.222,
+    UseHeightmap = false
+  },
+  ["2024-03-01T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.594457,
+    Latitude = 31.581823,
+    Altitude = 0,
+    SpeedMadeGood = 0.87,
+    CourseMadeGood = 314.229,
+    UseHeightmap = false
+  },
+  ["2024-03-01T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.576518,
+    Latitude = 31.566977,
+    Altitude = 0,
+    SpeedMadeGood = 4.32,
+    CourseMadeGood = 138.398,
+    UseHeightmap = false
+  },
+  ["2024-03-01T02:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.52959,
+    Latitude = 31.512308,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 336.812,
+    UseHeightmap = false
+  },
+  ["2024-03-01T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.5296,
+    Latitude = 31.512315,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 244.972,
+    UseHeightmap = false
+  },
+  ["2024-03-01T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.539628,
+    Latitude = 31.512485,
+    Altitude = 0,
+    SpeedMadeGood = 0.79,
+    CourseMadeGood = 283.141,
+    UseHeightmap = false
+  },
+  ["2024-03-01T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.59564,
+    Latitude = 31.526083,
+    Altitude = 0,
+    SpeedMadeGood = 2.85,
+    CourseMadeGood = 9.013,
+    UseHeightmap = false
+  },
+  ["2024-03-01T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.521183,
+    Latitude = 31.574708,
+    Altitude = 0,
+    SpeedMadeGood = 2.81,
+    CourseMadeGood = 102.66,
+    UseHeightmap = false
+  },
+  ["2024-03-01T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.459377,
+    Latitude = 31.515707,
+    Altitude = 0,
+    SpeedMadeGood = 2.57,
+    CourseMadeGood = 176.079,
+    UseHeightmap = false
+  },
+  ["2024-03-01T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.518818,
+    Latitude = 31.456968,
+    Altitude = 0,
+    SpeedMadeGood = 2.53,
+    CourseMadeGood = 256.867,
+    UseHeightmap = false
+  },
+  ["2024-03-01T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.594162,
+    Latitude = 31.500377,
+    Altitude = 0,
+    SpeedMadeGood = 2.67,
+    CourseMadeGood = 353.022,
+    UseHeightmap = false
+  },
+  ["2024-03-01T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.539898,
+    Latitude = 31.518717,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-01T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.53977,
+    Latitude = 31.518583,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-01T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.538132,
+    Latitude = 31.523107,
+    Altitude = 0,
+    SpeedMadeGood = 0.96,
+    CourseMadeGood = 300.272,
+    UseHeightmap = false
+  },
+  ["2024-03-01T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.54363,
+    Latitude = 31.525285,
+    Altitude = 0,
+    SpeedMadeGood = 0.52,
+    CourseMadeGood = 139.417,
+    UseHeightmap = false
+  },
+  ["2024-03-01T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.543765,
+    Latitude = 31.520265,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 330.27,
+    UseHeightmap = false
+  },
+  ["2024-03-01T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.543828,
+    Latitude = 31.520107,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-01T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.543828,
+    Latitude = 31.520105,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-01T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.543818,
+    Latitude = 31.520112,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 156.814,
+    UseHeightmap = false
+  },
+  ["2024-03-01T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.545878,
+    Latitude = 31.520223,
+    Altitude = 0,
+    SpeedMadeGood = 0.61,
+    CourseMadeGood = 243.421,
+    UseHeightmap = false
+  },
+  ["2024-03-01T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.563983,
+    Latitude = 31.510327,
+    Altitude = 0,
+    SpeedMadeGood = 0.05,
+    CourseMadeGood = 300.269,
+    UseHeightmap = false
+  },
+  ["2024-03-01T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.576212,
+    Latitude = 31.512267,
+    Altitude = 0,
+    SpeedMadeGood = 4.53,
+    CourseMadeGood = 281.475,
+    UseHeightmap = false
+  },
+  ["2024-03-01T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.575463,
+    Latitude = 31.57316,
+    Altitude = 0,
+    SpeedMadeGood = 2.78,
+    CourseMadeGood = 54.13,
+    UseHeightmap = false
+  },
+  ["2024-03-01T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.485453,
+    Latitude = 31.564608,
+    Altitude = 0,
+    SpeedMadeGood = 2.04,
+    CourseMadeGood = 137.595,
+    UseHeightmap = false
+  },
+  ["2024-03-01T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.480898,
+    Latitude = 31.490115,
+    Altitude = 0,
+    SpeedMadeGood = 2.45,
+    CourseMadeGood = 210.957,
+    UseHeightmap = false
+  },
+  ["2024-03-02T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.568312,
+    Latitude = 31.473645,
+    Altitude = 0,
+    SpeedMadeGood = 3.11,
+    CourseMadeGood = 303.946,
+    UseHeightmap = false
+  },
+  ["2024-03-02T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.596678,
+    Latitude = 31.54909,
+    Altitude = 0,
+    SpeedMadeGood = 1.73,
+    CourseMadeGood = 29.722,
+    UseHeightmap = false
+  },
+  ["2024-03-02T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.533978,
+    Latitude = 31.53484,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.534043,
+    Latitude = 31.534697,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.534042,
+    Latitude = 31.534725,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 120.275,
+    UseHeightmap = false
+  },
+  ["2024-03-02T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.534007,
+    Latitude = 31.534745,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.548882,
+    Latitude = 31.53571,
+    Altitude = 0,
+    SpeedMadeGood = 0.52,
+    CourseMadeGood = 220.579,
+    UseHeightmap = false
+  },
+  ["2024-03-02T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.512195,
+    Latitude = 31.532153,
+    Altitude = 0,
+    SpeedMadeGood = 4.56,
+    CourseMadeGood = 94.451,
+    UseHeightmap = false
+  },
+  ["2024-03-02T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.524047,
+    Latitude = 31.533773,
+    Altitude = 0,
+    SpeedMadeGood = 0.66,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.554748,
+    Latitude = 31.53446,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.524928,
+    Latitude = 31.536108,
+    Altitude = 0,
+    SpeedMadeGood = 0.67,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.524528,
+    Latitude = 31.536047,
+    Altitude = 0,
+    SpeedMadeGood = 0.15,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.526658,
+    Latitude = 31.539248,
+    Altitude = 0,
+    SpeedMadeGood = 1.83,
+    CourseMadeGood = 330.275,
+    UseHeightmap = false
+  },
+  ["2024-03-02T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.534007,
+    Latitude = 31.54739,
+    Altitude = 0,
+    SpeedMadeGood = 0.79,
+    CourseMadeGood = 139.424,
+    UseHeightmap = false
+  },
+  ["2024-03-02T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.537317,
+    Latitude = 31.543223,
+    Altitude = 0,
+    SpeedMadeGood = 0.31,
+    CourseMadeGood = 307.899,
+    UseHeightmap = false
+  },
+  ["2024-03-02T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.53733,
+    Latitude = 31.543218,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 120.278,
+    UseHeightmap = false
+  },
+  ["2024-03-02T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.53734,
+    Latitude = 31.543282,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 139.423,
+    UseHeightmap = false
+  },
+  ["2024-03-02T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.537337,
+    Latitude = 31.543292,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 319.423,
+    UseHeightmap = false
+  },
+  ["2024-03-02T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.540348,
+    Latitude = 31.542638,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 319.423,
+    UseHeightmap = false
+  },
+  ["2024-03-02T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.540372,
+    Latitude = 31.542657,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-02T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.540397,
+    Latitude = 31.54265,
+    Altitude = 0,
+    SpeedMadeGood = 0.47,
+    CourseMadeGood = 203.181,
+    UseHeightmap = false
+  },
+  ["2024-03-02T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.540378,
+    Latitude = 31.542647,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 15.933,
+    UseHeightmap = false
+  },
+  ["2024-03-02T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.549723,
+    Latitude = 31.543945,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 244.964,
+    UseHeightmap = false
+  },
+  ["2024-03-02T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.574435,
+    Latitude = 31.5473,
+    Altitude = 0,
+    SpeedMadeGood = 1.28,
+    CourseMadeGood = 289.306,
+    UseHeightmap = false
+  },
+  ["2024-03-03T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.513383,
+    Latitude = 31.548888,
+    Altitude = 0,
+    SpeedMadeGood = 0.15,
+    CourseMadeGood = 52.1,
+    UseHeightmap = false
+  },
+  ["2024-03-03T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.511202,
+    Latitude = 31.54747,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 120.279,
+    UseHeightmap = false
+  },
+  ["2024-03-03T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.5112,
+    Latitude = 31.547448,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-03T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.511192,
+    Latitude = 31.547453,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-03T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.510457,
+    Latitude = 31.55213,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 336.821,
+    UseHeightmap = false
+  },
+  ["2024-03-03T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.530478,
+    Latitude = 31.557158,
+    Altitude = 0,
+    SpeedMadeGood = 3.22,
+    CourseMadeGood = 125.703,
+    UseHeightmap = false
+  },
+  ["2024-03-03T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.476962,
+    Latitude = 31.532598,
+    Altitude = 0,
+    SpeedMadeGood = 0.55,
+    CourseMadeGood = 327.284,
+    UseHeightmap = false
+  },
+  ["2024-03-03T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.501488,
+    Latitude = 31.541963,
+    Altitude = 0,
+    SpeedMadeGood = 0.94,
+    CourseMadeGood = 326.332,
+    UseHeightmap = false
+  },
+  ["2024-03-03T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.518023,
+    Latitude = 31.551375,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-03T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.509305,
+    Latitude = 31.554685,
+    Altitude = 0,
+    SpeedMadeGood = 0.98,
+    CourseMadeGood = 73.725,
+    UseHeightmap = false
+  },
+  ["2024-03-03T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.506433,
+    Latitude = 31.55939,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 239.718,
+    UseHeightmap = false
+  },
+  ["2024-03-03T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.506418,
+    Latitude = 31.559372,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-03T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.50509,
+    Latitude = 31.561558,
+    Altitude = 0,
+    SpeedMadeGood = 1.01,
+    CourseMadeGood = 37.275,
+    UseHeightmap = false
+  },
+  ["2024-03-03T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.514463,
+    Latitude = 31.565755,
+    Altitude = 0,
+    SpeedMadeGood = 2.04,
+    CourseMadeGood = 227.322,
+    UseHeightmap = false
+  },
+  ["2024-03-03T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.513612,
+    Latitude = 31.561932,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-03T15:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.51361,
+    Latitude = 31.56193,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-03T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.5136,
+    Latitude = 31.56198,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-03T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.520445,
+    Latitude = 31.56693,
+    Altitude = 0,
+    SpeedMadeGood = 0.83,
+    CourseMadeGood = 309.837,
+    UseHeightmap = false
+  },
+  ["2024-03-03T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.528272,
+    Latitude = 31.572973,
+    Altitude = 0,
+    SpeedMadeGood = 0.59,
+    CourseMadeGood = 353.027,
+    UseHeightmap = false
+  },
+  ["2024-03-03T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.533882,
+    Latitude = 31.576102,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 232.091,
+    UseHeightmap = false
+  },
+  ["2024-03-03T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.521852,
+    Latitude = 31.5739,
+    Altitude = 0,
+    SpeedMadeGood = 5.74,
+    CourseMadeGood = 117.965,
+    UseHeightmap = false
+  },
+  ["2024-03-03T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.374675,
+    Latitude = 31.491727,
+    Altitude = 0,
+    SpeedMadeGood = 2.39,
+    CourseMadeGood = 308.509,
+    UseHeightmap = false
+  },
+  ["2024-03-03T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.443628,
+    Latitude = 31.549317,
+    Altitude = 0,
+    SpeedMadeGood = 2.84,
+    CourseMadeGood = 314.519,
+    UseHeightmap = false
+  },
+  ["2024-03-03T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.501252,
+    Latitude = 31.609232,
+    Altitude = 0,
+    SpeedMadeGood = 2.36,
+    CourseMadeGood = 321.259,
+    UseHeightmap = false
+  },
+  ["2024-03-04T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.561292,
+    Latitude = 31.670608,
+    Altitude = 0,
+    SpeedMadeGood = 2.22,
+    CourseMadeGood = 333.658,
+    UseHeightmap = false
+  },
+  ["2024-03-04T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.614915,
+    Latitude = 31.736247,
+    Altitude = 0,
+    SpeedMadeGood = 2.82,
+    CourseMadeGood = 328.316,
+    UseHeightmap = false
+  },
+  ["2024-03-04T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.600497,
+    Latitude = 31.724968,
+    Altitude = 0,
+    SpeedMadeGood = 5.74,
+    CourseMadeGood = 150.325,
+    UseHeightmap = false
+  },
+  ["2024-03-04T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.498472,
+    Latitude = 31.576288,
+    Altitude = 0,
+    SpeedMadeGood = 0.47,
+    CourseMadeGood = 125.025,
+    UseHeightmap = false
+  },
+  ["2024-03-04T04:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.496718,
+    Latitude = 31.574177,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 300.286,
+    UseHeightmap = false
+  },
+  ["2024-03-04T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.516968,
+    Latitude = 31.590202,
+    Altitude = 0,
+    SpeedMadeGood = 0.83,
+    CourseMadeGood = 324.499,
+    UseHeightmap = false
+  },
+  ["2024-03-04T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.455085,
+    Latitude = 31.520967,
+    Altitude = 0,
+    SpeedMadeGood = 5.98,
+    CourseMadeGood = 143.506,
+    UseHeightmap = false
+  },
+  ["2024-03-04T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.40906,
+    Latitude = 31.472865,
+    Altitude = 0,
+    SpeedMadeGood = 2.57,
+    CourseMadeGood = 324.465,
+    UseHeightmap = false
+  },
+  ["2024-03-04T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.473352,
+    Latitude = 31.535493,
+    Altitude = 0,
+    SpeedMadeGood = 2.69,
+    CourseMadeGood = 321.127,
+    UseHeightmap = false
+  },
+  ["2024-03-04T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.532982,
+    Latitude = 31.599598,
+    Altitude = 0,
+    SpeedMadeGood = 2.57,
+    CourseMadeGood = 322.94,
+    UseHeightmap = false
+  },
+  ["2024-03-04T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.490378,
+    Latitude = 31.586308,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-04T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.49043,
+    Latitude = 31.588067,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-04T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.488953,
+    Latitude = 31.592245,
+    Altitude = 0,
+    SpeedMadeGood = 1.11,
+    CourseMadeGood = 4.892,
+    UseHeightmap = false
+  },
+  ["2024-03-04T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.489615,
+    Latitude = 31.597145,
+    Altitude = 0,
+    SpeedMadeGood = 0.19,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-04T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.489595,
+    Latitude = 31.59714,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-04T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.486455,
+    Latitude = 31.611787,
+    Altitude = 0,
+    SpeedMadeGood = 1.46,
+    CourseMadeGood = 48.769,
+    UseHeightmap = false
+  },
+  ["2024-03-04T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.486727,
+    Latitude = 31.62877,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-04T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.426947,
+    Latitude = 31.728583,
+    Altitude = 0,
+    SpeedMadeGood = 5.65,
+    CourseMadeGood = 23.561,
+    UseHeightmap = false
+  },
+  ["2024-03-04T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.349808,
+    Latitude = 31.914155,
+    Altitude = 0,
+    SpeedMadeGood = 6.36,
+    CourseMadeGood = 16.156,
+    UseHeightmap = false
+  },
+  ["2024-03-04T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.271225,
+    Latitude = 32.096703,
+    Altitude = 0,
+    SpeedMadeGood = 5.96,
+    CourseMadeGood = 22.257,
+    UseHeightmap = false
+  },
+  ["2024-03-04T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.191998,
+    Latitude = 32.277728,
+    Altitude = 0,
+    SpeedMadeGood = 5.92,
+    CourseMadeGood = 16.387,
+    UseHeightmap = false
+  },
+  ["2024-03-04T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.114527,
+    Latitude = 32.45997,
+    Altitude = 0,
+    SpeedMadeGood = 6.06,
+    CourseMadeGood = 24.599,
+    UseHeightmap = false
+  },
+  ["2024-03-04T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -122.035732,
+    Latitude = 32.641957,
+    Altitude = 0,
+    SpeedMadeGood = 6.06,
+    CourseMadeGood = 22.103,
+    UseHeightmap = false
+  },
+  ["2024-03-04T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.956288,
+    Latitude = 32.825278,
+    Altitude = 0,
+    SpeedMadeGood = 5.93,
+    CourseMadeGood = 18.661,
+    UseHeightmap = false
+  },
+  ["2024-03-05T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.876325,
+    Latitude = 33.009258,
+    Altitude = 0,
+    SpeedMadeGood = 6.05,
+    CourseMadeGood = 21.578,
+    UseHeightmap = false
+  },
+  ["2024-03-05T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.797418,
+    Latitude = 33.190355,
+    Altitude = 0,
+    SpeedMadeGood = 6.03,
+    CourseMadeGood = 17.921,
+    UseHeightmap = false
+  },
+  ["2024-03-05T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.718935,
+    Latitude = 33.37006,
+    Altitude = 0,
+    SpeedMadeGood = 5.68,
+    CourseMadeGood = 15.922,
+    UseHeightmap = false
+  },
+  ["2024-03-05T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.643292,
+    Latitude = 33.543122,
+    Altitude = 0,
+    SpeedMadeGood = 5.91,
+    CourseMadeGood = 23.6,
+    UseHeightmap = false
+  },
+  ["2024-03-05T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.567062,
+    Latitude = 33.717015,
+    Altitude = 0,
+    SpeedMadeGood = 6.25,
+    CourseMadeGood = 20.188,
+    UseHeightmap = false
+  },
+  ["2024-03-05T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.490892,
+    Latitude = 33.890453,
+    Altitude = 0,
+    SpeedMadeGood = 5.53,
+    CourseMadeGood = 20.527,
+    UseHeightmap = false
+  },
+  ["2024-03-05T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.415215,
+    Latitude = 34.062558,
+    Altitude = 0,
+    SpeedMadeGood = 5.79,
+    CourseMadeGood = 15.8,
+    UseHeightmap = false
+  },
+  ["2024-03-05T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.337357,
+    Latitude = 34.239148,
+    Altitude = 0,
+    SpeedMadeGood = 5.74,
+    CourseMadeGood = 18.377,
+    UseHeightmap = false
+  },
+  ["2024-03-05T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.283337,
+    Latitude = 34.4232,
+    Altitude = 0,
+    SpeedMadeGood = 5.89,
+    CourseMadeGood = 13.063,
+    UseHeightmap = false
+  },
+  ["2024-03-05T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.245558,
+    Latitude = 34.608907,
+    Altitude = 0,
+    SpeedMadeGood = 5.62,
+    CourseMadeGood = 12.132,
+    UseHeightmap = false
+  },
+  ["2024-03-05T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.214867,
+    Latitude = 34.795262,
+    Altitude = 0,
+    SpeedMadeGood = 5.78,
+    CourseMadeGood = 4.624,
+    UseHeightmap = false
+  },
+  ["2024-03-05T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.245227,
+    Latitude = 34.975377,
+    Altitude = 0,
+    SpeedMadeGood = 5.97,
+    CourseMadeGood = 335.97,
+    UseHeightmap = false
+  },
+  ["2024-03-05T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.347905,
+    Latitude = 35.146942,
+    Altitude = 0,
+    SpeedMadeGood = 6.11,
+    CourseMadeGood = 333.765,
+    UseHeightmap = false
+  },
+  ["2024-03-05T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.471113,
+    Latitude = 35.29161,
+    Altitude = 0,
+    SpeedMadeGood = 6.08,
+    CourseMadeGood = 198.795,
+    UseHeightmap = false
+  },
+  ["2024-03-05T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.33396,
+    Latitude = 35.134347,
+    Altitude = 0,
+    SpeedMadeGood = 6.0,
+    CourseMadeGood = 157.67,
+    UseHeightmap = false
+  },
+  ["2024-03-05T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.24946,
+    Latitude = 35.000382,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 140.551,
+    UseHeightmap = false
+  },
+  ["2024-03-05T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.252543,
+    Latitude = 35.001478,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 253.1,
+    UseHeightmap = false
+  },
+  ["2024-03-05T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.259225,
+    Latitude = 35.003868,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 346.771,
+    UseHeightmap = false
+  },
+  ["2024-03-05T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.26972,
+    Latitude = 35.002515,
+    Altitude = 0,
+    SpeedMadeGood = 1.07,
+    CourseMadeGood = 110.032,
+    UseHeightmap = false
+  },
+  ["2024-03-05T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.265935,
+    Latitude = 35.000002,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-05T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.26678,
+    Latitude = 35.00017,
+    Altitude = 0,
+    SpeedMadeGood = 1.07,
+    CourseMadeGood = 297.512,
+    UseHeightmap = false
+  },
+  ["2024-03-05T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.30081,
+    Latitude = 35.012115,
+    Altitude = 0,
+    SpeedMadeGood = 1.23,
+    CourseMadeGood = 295.055,
+    UseHeightmap = false
+  },
+  ["2024-03-05T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.320278,
+    Latitude = 35.026967,
+    Altitude = 0,
+    SpeedMadeGood = 5.26,
+    CourseMadeGood = 121.293,
+    UseHeightmap = false
+  },
+  ["2024-03-05T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.262982,
+    Latitude = 34.983317,
+    Altitude = 0,
+    SpeedMadeGood = 0.57,
+    CourseMadeGood = 344.659,
+    UseHeightmap = false
+  },
+  ["2024-03-06T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.262963,
+    Latitude = 34.983337,
+    Altitude = 0,
+    SpeedMadeGood = 0.57,
+    CourseMadeGood = 39.455,
+    UseHeightmap = false
+  },
+  ["2024-03-06T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.262972,
+    Latitude = 34.983325,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.262968,
+    Latitude = 34.98334,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.262983,
+    Latitude = 34.983343,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 22.368,
+    UseHeightmap = false
+  },
+  ["2024-03-06T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.278667,
+    Latitude = 34.985532,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 202.367,
+    UseHeightmap = false
+  },
+  ["2024-03-06T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.278652,
+    Latitude = 34.985512,
+    Altitude = 0,
+    SpeedMadeGood = 0.37,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.278653,
+    Latitude = 34.985502,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 168.374,
+    UseHeightmap = false
+  },
+  ["2024-03-06T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.299525,
+    Latitude = 34.987733,
+    Altitude = 0,
+    SpeedMadeGood = 0.73,
+    CourseMadeGood = 283.659,
+    UseHeightmap = false
+  },
+  ["2024-03-06T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.333048,
+    Latitude = 34.990043,
+    Altitude = 0,
+    SpeedMadeGood = 0.92,
+    CourseMadeGood = 295.922,
+    UseHeightmap = false
+  },
+  ["2024-03-06T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.2796,
+    Latitude = 34.980055,
+    Altitude = 0,
+    SpeedMadeGood = 1.23,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.277835,
+    Latitude = 34.979163,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.277827,
+    Latitude = 34.979168,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 247.952,
+    UseHeightmap = false
+  },
+  ["2024-03-06T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.277828,
+    Latitude = 34.979163,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.299102,
+    Latitude = 34.974707,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 157.63,
+    UseHeightmap = false
+  },
+  ["2024-03-06T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.28705,
+    Latitude = 34.98565,
+    Altitude = 0,
+    SpeedMadeGood = 0.55,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.287038,
+    Latitude = 34.985652,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 157.633,
+    UseHeightmap = false
+  },
+  ["2024-03-06T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.287062,
+    Latitude = 34.985657,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.287063,
+    Latitude = 34.98566,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 140.546,
+    UseHeightmap = false
+  },
+  ["2024-03-06T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.287033,
+    Latitude = 34.98566,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 219.454,
+    UseHeightmap = false
+  },
+  ["2024-03-06T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.277862,
+    Latitude = 34.971418,
+    Altitude = 0,
+    SpeedMadeGood = 0.14,
+    CourseMadeGood = 219.459,
+    UseHeightmap = false
+  },
+  ["2024-03-06T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.220437,
+    Latitude = 34.96433,
+    Altitude = 0,
+    SpeedMadeGood = 1.11,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-06T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.269117,
+    Latitude = 34.908753,
+    Altitude = 0,
+    SpeedMadeGood = 2.57,
+    CourseMadeGood = 244.973,
+    UseHeightmap = false
+  },
+  ["2024-03-06T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.3645,
+    Latitude = 34.926715,
+    Altitude = 0,
+    SpeedMadeGood = 2.59,
+    CourseMadeGood = 318.91,
+    UseHeightmap = false
+  },
+  ["2024-03-06T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.373457,
+    Latitude = 35.007705,
+    Altitude = 0,
+    SpeedMadeGood = 2.8,
+    CourseMadeGood = 28.218,
+    UseHeightmap = false
+  },
+  ["2024-03-07T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.28413,
+    Latitude = 35.037548,
+    Altitude = 0,
+    SpeedMadeGood = 2.61,
+    CourseMadeGood = 104.603,
+    UseHeightmap = false
+  },
+  ["2024-03-07T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.221322,
+    Latitude = 34.976738,
+    Altitude = 0,
+    SpeedMadeGood = 2.7,
+    CourseMadeGood = 193.234,
+    UseHeightmap = false
+  },
+  ["2024-03-07T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.292862,
+    Latitude = 34.935778,
+    Altitude = 0,
+    SpeedMadeGood = 2.67,
+    CourseMadeGood = 279.841,
+    UseHeightmap = false
+  },
+  ["2024-03-07T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.316387,
+    Latitude = 34.958958,
+    Altitude = 0,
+    SpeedMadeGood = 0.14,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-07T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.320728,
+    Latitude = 34.965933,
+    Altitude = 0,
+    SpeedMadeGood = 0.62,
+    CourseMadeGood = 326.633,
+    UseHeightmap = false
+  },
+  ["2024-03-07T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.315687,
+    Latitude = 34.94666,
+    Altitude = 0,
+    SpeedMadeGood = 6.14,
+    CourseMadeGood = 161.13,
+    UseHeightmap = false
+  },
+  ["2024-03-07T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.313227,
+    Latitude = 34.92108,
+    Altitude = 0,
+    SpeedMadeGood = 2.37,
+    CourseMadeGood = 328.295,
+    UseHeightmap = false
+  },
+  ["2024-03-07T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.355142,
+    Latitude = 34.994317,
+    Altitude = 0,
+    SpeedMadeGood = 2.47,
+    CourseMadeGood = 342.594,
+    UseHeightmap = false
+  },
+  ["2024-03-07T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.382528,
+    Latitude = 35.063292,
+    Altitude = 0,
+    SpeedMadeGood = 4.3,
+    CourseMadeGood = 57.376,
+    UseHeightmap = false
+  },
+  ["2024-03-07T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.311493,
+    Latitude = 34.940752,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 301.266,
+    UseHeightmap = false
+  },
+  ["2024-03-07T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.3115,
+    Latitude = 34.940808,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-07T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.311533,
+    Latitude = 34.940778,
+    Altitude = 0,
+    SpeedMadeGood = 0.12,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-07T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.317667,
+    Latitude = 34.940088,
+    Altitude = 0,
+    SpeedMadeGood = 1.9,
+    CourseMadeGood = 249.983,
+    UseHeightmap = false
+  },
+  ["2024-03-07T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.352788,
+    Latitude = 34.941918,
+    Altitude = 0,
+    SpeedMadeGood = 1.35,
+    CourseMadeGood = 123.521,
+    UseHeightmap = false
+  },
+  ["2024-03-07T14:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343395,
+    Latitude = 34.938853,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 238.735,
+    UseHeightmap = false
+  },
+  ["2024-03-07T15:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343387,
+    Latitude = 34.93885,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 337.621,
+    UseHeightmap = false
+  },
+  ["2024-03-07T16:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.3434,
+    Latitude = 34.938852,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-07T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343333,
+    Latitude = 34.93891,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 128.993,
+    UseHeightmap = false
+  },
+  ["2024-03-07T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343175,
+    Latitude = 34.939037,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-07T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343205,
+    Latitude = 34.939032,
+    Altitude = 0,
+    SpeedMadeGood = 0.3,
+    CourseMadeGood = 157.621,
+    UseHeightmap = false
+  },
+  ["2024-03-07T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343228,
+    Latitude = 34.939067,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 301.266,
+    UseHeightmap = false
+  },
+  ["2024-03-07T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343128,
+    Latitude = 34.939027,
+    Altitude = 0,
+    SpeedMadeGood = 0.45,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-07T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343148,
+    Latitude = 34.939068,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 320.53,
+    UseHeightmap = false
+  },
+  ["2024-03-07T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.34315,
+    Latitude = 34.939043,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 22.379,
+    UseHeightmap = false
+  },
+  ["2024-03-08T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343157,
+    Latitude = 34.939062,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 58.734,
+    UseHeightmap = false
+  },
+  ["2024-03-08T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343165,
+    Latitude = 34.939092,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 202.379,
+    UseHeightmap = false
+  },
+  ["2024-03-08T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343153,
+    Latitude = 34.939057,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.343143,
+    Latitude = 34.939075,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.350938,
+    Latitude = 34.946232,
+    Altitude = 0,
+    SpeedMadeGood = 0.9,
+    CourseMadeGood = 297.497,
+    UseHeightmap = false
+  },
+  ["2024-03-08T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.359953,
+    Latitude = 34.953877,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 157.625,
+    UseHeightmap = false
+  },
+  ["2024-03-08T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.360038,
+    Latitude = 34.953817,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.360032,
+    Latitude = 34.953812,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.363053,
+    Latitude = 34.952802,
+    Altitude = 0,
+    SpeedMadeGood = 4.09,
+    CourseMadeGood = 212.75,
+    UseHeightmap = false
+  },
+  ["2024-03-08T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.417678,
+    Latitude = 34.784952,
+    Altitude = 0,
+    SpeedMadeGood = 5.09,
+    CourseMadeGood = 192.408,
+    UseHeightmap = false
+  },
+  ["2024-03-08T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.423507,
+    Latitude = 34.878333,
+    Altitude = 0,
+    SpeedMadeGood = 0.37,
+    CourseMadeGood = 247.977,
+    UseHeightmap = false
+  },
+  ["2024-03-08T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.42351,
+    Latitude = 34.878333,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.43123,
+    Latitude = 34.877715,
+    Altitude = 0,
+    SpeedMadeGood = 1.07,
+    CourseMadeGood = 307.177,
+    UseHeightmap = false
+  },
+  ["2024-03-08T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.415457,
+    Latitude = 34.902712,
+    Altitude = 0,
+    SpeedMadeGood = 2.92,
+    CourseMadeGood = 12.989,
+    UseHeightmap = false
+  },
+  ["2024-03-08T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.414187,
+    Latitude = 34.920947,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 320.523,
+    UseHeightmap = false
+  },
+  ["2024-03-08T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.419065,
+    Latitude = 34.927148,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 121.262,
+    UseHeightmap = false
+  },
+  ["2024-03-08T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.419182,
+    Latitude = 34.927228,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 328.297,
+    UseHeightmap = false
+  },
+  ["2024-03-08T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436025,
+    Latitude = 34.937987,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 39.471,
+    UseHeightmap = false
+  },
+  ["2024-03-08T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436032,
+    Latitude = 34.938013,
+    Altitude = 0,
+    SpeedMadeGood = 0.07,
+    CourseMadeGood = 121.265,
+    UseHeightmap = false
+  },
+  ["2024-03-08T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436057,
+    Latitude = 34.937998,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436343,
+    Latitude = 34.93778,
+    Altitude = 0,
+    SpeedMadeGood = 0.51,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436615,
+    Latitude = 34.937612,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436638,
+    Latitude = 34.937622,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-08T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436633,
+    Latitude = 34.937628,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 253.112,
+    UseHeightmap = false
+  },
+  ["2024-03-09T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436662,
+    Latitude = 34.937633,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 337.621,
+    UseHeightmap = false
+  },
+  ["2024-03-09T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436658,
+    Latitude = 34.93762,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-09T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436638,
+    Latitude = 34.937642,
+    Altitude = 0,
+    SpeedMadeGood = 0.48,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-09T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.436618,
+    Latitude = 34.93763,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 22.379,
+    UseHeightmap = false
+  },
+  ["2024-03-09T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.43665,
+    Latitude = 34.937673,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-09T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.455405,
+    Latitude = 34.951123,
+    Altitude = 0,
+    SpeedMadeGood = 0.85,
+    CourseMadeGood = 320.534,
+    UseHeightmap = false
+  },
+  ["2024-03-09T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.538225,
+    Latitude = 34.987015,
+    Altitude = 0,
+    SpeedMadeGood = 2.35,
+    CourseMadeGood = 248.753,
+    UseHeightmap = false
+  },
+  ["2024-03-09T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.582472,
+    Latitude = 34.923535,
+    Altitude = 0,
+    SpeedMadeGood = 2.4,
+    CourseMadeGood = 153.702,
+    UseHeightmap = false
+  },
+  ["2024-03-09T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.531953,
+    Latitude = 34.85526,
+    Altitude = 0,
+    SpeedMadeGood = 2.53,
+    CourseMadeGood = 140.5,
+    UseHeightmap = false
+  },
+  ["2024-03-09T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.457645,
+    Latitude = 34.800265,
+    Altitude = 0,
+    SpeedMadeGood = 2.59,
+    CourseMadeGood = 102.215,
+    UseHeightmap = false
+  },
+  ["2024-03-09T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.378977,
+    Latitude = 34.838347,
+    Altitude = 0,
+    SpeedMadeGood = 2.66,
+    CourseMadeGood = 357.752,
+    UseHeightmap = false
+  },
+  ["2024-03-09T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.466702,
+    Latitude = 34.872105,
+    Altitude = 0,
+    SpeedMadeGood = 4.69,
+    CourseMadeGood = 294.152,
+    UseHeightmap = false
+  },
+  ["2024-03-09T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.519477,
+    Latitude = 34.889495,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-09T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.519485,
+    Latitude = 34.889487,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 301.25,
+    UseHeightmap = false
+  },
+  ["2024-03-09T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.519468,
+    Latitude = 34.889517,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 312.309,
+    UseHeightmap = false
+  },
+  ["2024-03-09T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.519482,
+    Latitude = 34.889503,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-09T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.519525,
+    Latitude = 34.889508,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 39.488,
+    UseHeightmap = false
+  },
+  ["2024-03-09T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.516507,
+    Latitude = 34.885627,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 121.249,
+    UseHeightmap = false
+  },
+  ["2024-03-09T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.51484,
+    Latitude = 34.886038,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 308.975,
+    UseHeightmap = false
+  },
+  ["2024-03-09T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.514838,
+    Latitude = 34.886027,
+    Altitude = 0,
+    SpeedMadeGood = 0.14,
+    CourseMadeGood = 39.489,
+    UseHeightmap = false
+  },
+  ["2024-03-09T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.514843,
+    Latitude = 34.886043,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 253.122,
+    UseHeightmap = false
+  },
+  ["2024-03-09T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.514875,
+    Latitude = 34.885823,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 238.751,
+    UseHeightmap = false
+  },
+  ["2024-03-09T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.544195,
+    Latitude = 34.908,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-09T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.506495,
+    Latitude = 34.943867,
+    Altitude = 0,
+    SpeedMadeGood = 2.71,
+    CourseMadeGood = 133.181,
+    UseHeightmap = false
+  },
+  ["2024-03-10T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.511357,
+    Latitude = 34.865398,
+    Altitude = 0,
+    SpeedMadeGood = 3.13,
+    CourseMadeGood = 236.978,
+    UseHeightmap = false
+  },
+  ["2024-03-10T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.599705,
+    Latitude = 34.877915,
+    Altitude = 0,
+    SpeedMadeGood = 2.68,
+    CourseMadeGood = 339.465,
+    UseHeightmap = false
+  },
+  ["2024-03-10T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.577012,
+    Latitude = 34.951402,
+    Altitude = 0,
+    SpeedMadeGood = 2.84,
+    CourseMadeGood = 61.434,
+    UseHeightmap = false
+  },
+  ["2024-03-10T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.550617,
+    Latitude = 34.900782,
+    Altitude = 0,
+    SpeedMadeGood = 6.27,
+    CourseMadeGood = 206.304,
+    UseHeightmap = false
+  },
+  ["2024-03-10T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.569537,
+    Latitude = 34.877328,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 337.606,
+    UseHeightmap = false
+  },
+  ["2024-03-10T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.576308,
+    Latitude = 34.88171,
+    Altitude = 0,
+    SpeedMadeGood = 0.92,
+    CourseMadeGood = 303.987,
+    UseHeightmap = false
+  },
+  ["2024-03-10T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.572698,
+    Latitude = 34.882073,
+    Altitude = 0,
+    SpeedMadeGood = 4.74,
+    CourseMadeGood = 124.245,
+    UseHeightmap = false
+  },
+  ["2024-03-10T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.577115,
+    Latitude = 34.889853,
+    Altitude = 0,
+    SpeedMadeGood = 0.72,
+    CourseMadeGood = 333.693,
+    UseHeightmap = false
+  },
+  ["2024-03-10T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.599678,
+    Latitude = 34.910077,
+    Altitude = 0,
+    SpeedMadeGood = 1.24,
+    CourseMadeGood = 306.068,
+    UseHeightmap = false
+  },
+  ["2024-03-10T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.629482,
+    Latitude = 34.93306,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 140.527,
+    UseHeightmap = false
+  },
+  ["2024-03-10T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.610038,
+    Latitude = 34.906492,
+    Altitude = 0,
+    SpeedMadeGood = 1.47,
+    CourseMadeGood = 146.614,
+    UseHeightmap = false
+  },
+  ["2024-03-10T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.605198,
+    Latitude = 34.900037,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 238.747,
+    UseHeightmap = false
+  },
+  ["2024-03-10T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.603317,
+    Latitude = 34.897703,
+    Altitude = 0,
+    SpeedMadeGood = 0.45,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-10T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.60331,
+    Latitude = 34.897712,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-10T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.603323,
+    Latitude = 34.897715,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 22.389,
+    UseHeightmap = false
+  },
+  ["2024-03-10T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.6033,
+    Latitude = 34.897718,
+    Altitude = 0,
+    SpeedMadeGood = 0.21,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-10T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.6033,
+    Latitude = 34.897725,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-10T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.613203,
+    Latitude = 34.902055,
+    Altitude = 0,
+    SpeedMadeGood = 0.43,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-10T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.625585,
+    Latitude = 34.907358,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-10T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.63101,
+    Latitude = 34.908972,
+    Altitude = 0,
+    SpeedMadeGood = 1.37,
+    CourseMadeGood = 261.872,
+    UseHeightmap = false
+  },
+  ["2024-03-10T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.637507,
+    Latitude = 34.9042,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-10T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.645422,
+    Latitude = 34.91006,
+    Altitude = 0,
+    SpeedMadeGood = 1.13,
+    CourseMadeGood = 324.775,
+    UseHeightmap = false
+  },
+  ["2024-03-10T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.613303,
+    Latitude = 34.879178,
+    Altitude = 0,
+    SpeedMadeGood = 0.8,
+    CourseMadeGood = 298.339,
+    UseHeightmap = false
+  },
+  ["2024-03-10T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.635797,
+    Latitude = 34.89637,
+    Altitude = 0,
+    SpeedMadeGood = 0.72,
+    CourseMadeGood = 307.183,
+    UseHeightmap = false
+  },
+  ["2024-03-11T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.655685,
+    Latitude = 34.914195,
+    Altitude = 0,
+    SpeedMadeGood = 0.9,
+    CourseMadeGood = 329.529,
+    UseHeightmap = false
+  },
+  ["2024-03-11T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.678947,
+    Latitude = 34.932417,
+    Altitude = 0,
+    SpeedMadeGood = 1.22,
+    CourseMadeGood = 191.634,
+    UseHeightmap = false
+  },
+  ["2024-03-11T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.649685,
+    Latitude = 34.892573,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 208.78,
+    UseHeightmap = false
+  },
+  ["2024-03-11T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.649643,
+    Latitude = 34.892613,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-11T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.672238,
+    Latitude = 34.898632,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 157.611,
+    UseHeightmap = false
+  },
+  ["2024-03-11T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.670077,
+    Latitude = 34.900458,
+    Altitude = 0,
+    SpeedMadeGood = 3.77,
+    CourseMadeGood = 39.484,
+    UseHeightmap = false
+  },
+  ["2024-03-11T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.698813,
+    Latitude = 34.941513,
+    Altitude = 0,
+    SpeedMadeGood = 2.82,
+    CourseMadeGood = 228.549,
+    UseHeightmap = false
+  },
+  ["2024-03-11T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.701013,
+    Latitude = 34.873305,
+    Altitude = 0,
+    SpeedMadeGood = 2.86,
+    CourseMadeGood = 129.526,
+    UseHeightmap = false
+  },
+  ["2024-03-11T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.623597,
+    Latitude = 34.890847,
+    Altitude = 0,
+    SpeedMadeGood = 1.33,
+    CourseMadeGood = 14.226,
+    UseHeightmap = false
+  },
+  ["2024-03-11T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.67863,
+    Latitude = 34.926873,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-11T10:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.678627,
+    Latitude = 34.930783,
+    Altitude = 0,
+    SpeedMadeGood = 1.76,
+    CourseMadeGood = 198.233,
+    UseHeightmap = false
+  },
+  ["2024-03-11T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.517565,
+    Latitude = 34.7995,
+    Altitude = 0,
+    SpeedMadeGood = 6.15,
+    CourseMadeGood = 131.475,
+    UseHeightmap = false
+  },
+  ["2024-03-11T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.35495,
+    Latitude = 34.648252,
+    Altitude = 0,
+    SpeedMadeGood = 5.96,
+    CourseMadeGood = 138.563,
+    UseHeightmap = false
+  },
+  ["2024-03-11T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.191168,
+    Latitude = 34.496892,
+    Altitude = 0,
+    SpeedMadeGood = 6.85,
+    CourseMadeGood = 140.982,
+    UseHeightmap = false
+  },
+  ["2024-03-11T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.964033,
+    Latitude = 34.424153,
+    Altitude = 0,
+    SpeedMadeGood = 6.98,
+    CourseMadeGood = 108.295,
+    UseHeightmap = false
+  },
+  ["2024-03-11T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.732023,
+    Latitude = 34.371787,
+    Altitude = 0,
+    SpeedMadeGood = 6.15,
+    CourseMadeGood = 100.511,
+    UseHeightmap = false
+  },
+  ["2024-03-11T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.503818,
+    Latitude = 34.320113,
+    Altitude = 0,
+    SpeedMadeGood = 6.45,
+    CourseMadeGood = 102.975,
+    UseHeightmap = false
+  },
+  ["2024-03-11T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.268558,
+    Latitude = 34.266935,
+    Altitude = 0,
+    SpeedMadeGood = 6.49,
+    CourseMadeGood = 107.236,
+    UseHeightmap = false
+  },
+  ["2024-03-11T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.032125,
+    Latitude = 34.213465,
+    Altitude = 0,
+    SpeedMadeGood = 6.39,
+    CourseMadeGood = 104.87,
+    UseHeightmap = false
+  },
+  ["2024-03-11T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.794612,
+    Latitude = 34.159663,
+    Altitude = 0,
+    SpeedMadeGood = 6.76,
+    CourseMadeGood = 104.655,
+    UseHeightmap = false
+  },
+  ["2024-03-11T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.555425,
+    Latitude = 34.105393,
+    Altitude = 0,
+    SpeedMadeGood = 6.29,
+    CourseMadeGood = 104.852,
+    UseHeightmap = false
+  },
+  ["2024-03-11T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.316005,
+    Latitude = 34.051205,
+    Altitude = 0,
+    SpeedMadeGood = 6.17,
+    CourseMadeGood = 105.054,
+    UseHeightmap = false
+  },
+  ["2024-03-11T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.214007,
+    Latitude = 34.118172,
+    Altitude = 0,
+    SpeedMadeGood = 2.3,
+    CourseMadeGood = 123.258,
+    UseHeightmap = false
+  },
+  ["2024-03-11T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.318718,
+    Latitude = 34.115345,
+    Altitude = 0,
+    SpeedMadeGood = 5.37,
+    CourseMadeGood = 295.684,
+    UseHeightmap = false
+  },
+  ["2024-03-12T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.525053,
+    Latitude = 34.161767,
+    Altitude = 0,
+    SpeedMadeGood = 5.44,
+    CourseMadeGood = 276.975,
+    UseHeightmap = false
+  },
+  ["2024-03-12T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.726497,
+    Latitude = 34.188258,
+    Altitude = 0,
+    SpeedMadeGood = 5.11,
+    CourseMadeGood = 278.554,
+    UseHeightmap = false
+  },
+  ["2024-03-12T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.926242,
+    Latitude = 34.225063,
+    Altitude = 0,
+    SpeedMadeGood = 5.33,
+    CourseMadeGood = 287.294,
+    UseHeightmap = false
+  },
+  ["2024-03-12T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.13275,
+    Latitude = 34.271995,
+    Altitude = 0,
+    SpeedMadeGood = 5.51,
+    CourseMadeGood = 287.588,
+    UseHeightmap = false
+  },
+  ["2024-03-12T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.34056,
+    Latitude = 34.319352,
+    Altitude = 0,
+    SpeedMadeGood = 5.59,
+    CourseMadeGood = 286.768,
+    UseHeightmap = false
+  },
+  ["2024-03-12T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.472742,
+    Latitude = 34.238165,
+    Altitude = 0,
+    SpeedMadeGood = 5.7,
+    CourseMadeGood = 290.49,
+    UseHeightmap = false
+  },
+  ["2024-03-12T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.679268,
+    Latitude = 34.29766,
+    Altitude = 0,
+    SpeedMadeGood = 5.09,
+    CourseMadeGood = 288.506,
+    UseHeightmap = false
+  },
+  ["2024-03-12T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.79269,
+    Latitude = 34.399773,
+    Altitude = 0,
+    SpeedMadeGood = 5.57,
+    CourseMadeGood = 6.619,
+    UseHeightmap = false
+  },
+  ["2024-03-12T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.819132,
+    Latitude = 34.558847,
+    Altitude = 0,
+    SpeedMadeGood = 5.84,
+    CourseMadeGood = 326.341,
+    UseHeightmap = false
+  },
+  ["2024-03-12T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.949273,
+    Latitude = 34.705758,
+    Altitude = 0,
+    SpeedMadeGood = 5.62,
+    CourseMadeGood = 320.449,
+    UseHeightmap = false
+  },
+  ["2024-03-12T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.033007,
+    Latitude = 34.86564,
+    Altitude = 0,
+    SpeedMadeGood = 6.14,
+    CourseMadeGood = 354.567,
+    UseHeightmap = false
+  },
+  ["2024-03-12T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.03299,
+    Latitude = 35.050733,
+    Altitude = 0,
+    SpeedMadeGood = 5.66,
+    CourseMadeGood = 1.884,
+    UseHeightmap = false
+  },
+  ["2024-03-12T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.03293,
+    Latitude = 35.043793,
+    Altitude = 0,
+    SpeedMadeGood = 6.12,
+    CourseMadeGood = 181.713,
+    UseHeightmap = false
+  },
+  ["2024-03-12T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.992977,
+    Latitude = 34.848282,
+    Altitude = 0,
+    SpeedMadeGood = 5.63,
+    CourseMadeGood = 162.606,
+    UseHeightmap = false
+  },
+  ["2024-03-12T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.914412,
+    Latitude = 34.66141,
+    Altitude = 0,
+    SpeedMadeGood = 5.2,
+    CourseMadeGood = 160.767,
+    UseHeightmap = false
+  },
+  ["2024-03-12T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.833833,
+    Latitude = 34.4711,
+    Altitude = 0,
+    SpeedMadeGood = 6.49,
+    CourseMadeGood = 163.24,
+    UseHeightmap = false
+  },
+  ["2024-03-12T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.767742,
+    Latitude = 34.319008,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 58.926,
+    UseHeightmap = false
+  },
+  ["2024-03-12T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.766277,
+    Latitude = 34.316122,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-12T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.779125,
+    Latitude = 34.319145,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 140.317,
+    UseHeightmap = false
+  },
+  ["2024-03-12T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.76282,
+    Latitude = 34.293707,
+    Altitude = 0,
+    SpeedMadeGood = 6.37,
+    CourseMadeGood = 141.583,
+    UseHeightmap = false
+  },
+  ["2024-03-12T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.730827,
+    Latitude = 34.267795,
+    Altitude = 0,
+    SpeedMadeGood = 0.67,
+    CourseMadeGood = 350.572,
+    UseHeightmap = false
+  },
+  ["2024-03-12T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.752225,
+    Latitude = 34.280177,
+    Altitude = 0,
+    SpeedMadeGood = 0.82,
+    CourseMadeGood = 315.919,
+    UseHeightmap = false
+  },
+  ["2024-03-12T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.782025,
+    Latitude = 34.308523,
+    Altitude = 0,
+    SpeedMadeGood = 5.6,
+    CourseMadeGood = 132.708,
+    UseHeightmap = false
+  },
+  ["2024-03-12T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.723027,
+    Latitude = 34.267022,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 58.942,
+    UseHeightmap = false
+  },
+  ["2024-03-13T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.723018,
+    Latitude = 34.26699,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 295.725,
+    UseHeightmap = false
+  },
+  ["2024-03-13T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.723042,
+    Latitude = 34.266993,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-13T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.723022,
+    Latitude = 34.266983,
+    Altitude = 0,
+    SpeedMadeGood = 0.37,
+    CourseMadeGood = 337.456,
+    UseHeightmap = false
+  },
+  ["2024-03-13T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.721617,
+    Latitude = 34.26518,
+    Altitude = 0,
+    SpeedMadeGood = 4.01,
+    CourseMadeGood = 162.56,
+    UseHeightmap = false
+  },
+  ["2024-03-13T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.69284,
+    Latitude = 34.204548,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-13T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.693387,
+    Latitude = 34.204335,
+    Altitude = 0,
+    SpeedMadeGood = 0.33,
+    CourseMadeGood = 39.721,
+    UseHeightmap = false
+  },
+  ["2024-03-13T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.693402,
+    Latitude = 34.204352,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 157.441,
+    UseHeightmap = false
+  },
+  ["2024-03-13T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.693377,
+    Latitude = 34.204313,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-13T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.718133,
+    Latitude = 34.21958,
+    Altitude = 0,
+    SpeedMadeGood = 4.82,
+    CourseMadeGood = 222.258,
+    UseHeightmap = false
+  },
+  ["2024-03-13T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.613523,
+    Latitude = 34.113035,
+    Altitude = 0,
+    SpeedMadeGood = 0.9,
+    CourseMadeGood = 160.381,
+    UseHeightmap = false
+  },
+  ["2024-03-13T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.609623,
+    Latitude = 34.105733,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-13T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.609658,
+    Latitude = 34.105742,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-13T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.61579,
+    Latitude = 34.106002,
+    Altitude = 0,
+    SpeedMadeGood = 2.62,
+    CourseMadeGood = 260.894,
+    UseHeightmap = false
+  },
+  ["2024-03-13T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.799857,
+    Latitude = 34.066083,
+    Altitude = 0,
+    SpeedMadeGood = 5.05,
+    CourseMadeGood = 247.8,
+    UseHeightmap = false
+  },
+  ["2024-03-13T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.915595,
+    Latitude = 34.040622,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 59.01,
+    UseHeightmap = false
+  },
+  ["2024-03-13T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.047562,
+    Latitude = 34.014098,
+    Altitude = 0,
+    SpeedMadeGood = 5.31,
+    CourseMadeGood = 260.266,
+    UseHeightmap = false
+  },
+  ["2024-03-13T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.250808,
+    Latitude = 33.972548,
+    Altitude = 0,
+    SpeedMadeGood = 5.0,
+    CourseMadeGood = 262.115,
+    UseHeightmap = false
+  },
+  ["2024-03-13T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.330607,
+    Latitude = 33.955325,
+    Altitude = 0,
+    SpeedMadeGood = 0.37,
+    CourseMadeGood = 344.476,
+    UseHeightmap = false
+  },
+  ["2024-03-13T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.330585,
+    Latitude = 33.955343,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-13T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.330577,
+    Latitude = 33.955282,
+    Altitude = 0,
+    SpeedMadeGood = 0.36,
+    CourseMadeGood = 320.195,
+    UseHeightmap = false
+  },
+  ["2024-03-13T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.308725,
+    Latitude = 33.959492,
+    Altitude = 0,
+    SpeedMadeGood = 6.38,
+    CourseMadeGood = 98.771,
+    UseHeightmap = false
+  },
+  ["2024-03-13T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -121.091395,
+    Latitude = 33.953262,
+    Altitude = 0,
+    SpeedMadeGood = 5.82,
+    CourseMadeGood = 92.217,
+    UseHeightmap = false
+  },
+  ["2024-03-13T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.861437,
+    Latitude = 33.952068,
+    Altitude = 0,
+    SpeedMadeGood = 6.13,
+    CourseMadeGood = 95.117,
+    UseHeightmap = false
+  },
+  ["2024-03-13T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.630015,
+    Latitude = 33.958408,
+    Altitude = 0,
+    SpeedMadeGood = 6.19,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-14T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.602295,
+    Latitude = 34.012683,
+    Altitude = 0,
+    SpeedMadeGood = 5.38,
+    CourseMadeGood = 7.07,
+    UseHeightmap = false
+  },
+  ["2024-03-14T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.600375,
+    Latitude = 34.006015,
+    Altitude = 0,
+    SpeedMadeGood = 6.0,
+    CourseMadeGood = 190.299,
+    UseHeightmap = false
+  },
+  ["2024-03-14T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.588865,
+    Latitude = 33.996643,
+    Altitude = 0,
+    SpeedMadeGood = 4.61,
+    CourseMadeGood = 356.595,
+    UseHeightmap = false
+  },
+  ["2024-03-14T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.599245,
+    Latitude = 34.092158,
+    Altitude = 0,
+    SpeedMadeGood = 0.77,
+    CourseMadeGood = 295.678,
+    UseHeightmap = false
+  },
+  ["2024-03-14T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.605148,
+    Latitude = 34.092642,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 330.986,
+    UseHeightmap = false
+  },
+  ["2024-03-14T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.60511,
+    Latitude = 34.092593,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-14T06:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.60512,
+    Latitude = 34.09261,
+    Altitude = 0,
+    SpeedMadeGood = 0.14,
+    CourseMadeGood = 320.241,
+    UseHeightmap = false
+  },
+  ["2024-03-14T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.605142,
+    Latitude = 34.09262,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 308.706,
+    UseHeightmap = false
+  },
+  ["2024-03-14T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.574165,
+    Latitude = 34.040468,
+    Altitude = 0,
+    SpeedMadeGood = 0.64,
+    CourseMadeGood = 219.776,
+    UseHeightmap = false
+  },
+  ["2024-03-14T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.579298,
+    Latitude = 34.036592,
+    Altitude = 0,
+    SpeedMadeGood = 1.16,
+    CourseMadeGood = 251.058,
+    UseHeightmap = false
+  },
+  ["2024-03-14T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.597235,
+    Latitude = 34.026892,
+    Altitude = 0,
+    SpeedMadeGood = 0.48,
+    CourseMadeGood = 300.986,
+    UseHeightmap = false
+  },
+  ["2024-03-14T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.597273,
+    Latitude = 34.026897,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-14T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.601888,
+    Latitude = 34.020375,
+    Altitude = 0,
+    SpeedMadeGood = 1.04,
+    CourseMadeGood = 283.506,
+    UseHeightmap = false
+  },
+  ["2024-03-14T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.610867,
+    Latitude = 34.023392,
+    Altitude = 0,
+    SpeedMadeGood = 0.14,
+    CourseMadeGood = 344.488,
+    UseHeightmap = false
+  },
+  ["2024-03-14T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.6126,
+    Latitude = 34.02515,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 308.684,
+    UseHeightmap = false
+  },
+  ["2024-03-14T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.614395,
+    Latitude = 34.02706,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-14T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.599107,
+    Latitude = 34.0124,
+    Altitude = 0,
+    SpeedMadeGood = 5.47,
+    CourseMadeGood = 149.844,
+    UseHeightmap = false
+  },
+  ["2024-03-14T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.593638,
+    Latitude = 33.998988,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 320.21,
+    UseHeightmap = false
+  },
+  ["2024-03-14T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.575732,
+    Latitude = 33.977835,
+    Altitude = 0,
+    SpeedMadeGood = 0.09,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-14T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.575657,
+    Latitude = 33.977745,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 202.614,
+    UseHeightmap = false
+  },
+  ["2024-03-14T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.556792,
+    Latitude = 33.954383,
+    Altitude = 0,
+    SpeedMadeGood = 0.57,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-14T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.583448,
+    Latitude = 33.97458,
+    Altitude = 0,
+    SpeedMadeGood = 1.28,
+    CourseMadeGood = 303.697,
+    UseHeightmap = false
+  },
+  ["2024-03-14T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.605945,
+    Latitude = 33.99308,
+    Altitude = 0,
+    SpeedMadeGood = 0.92,
+    CourseMadeGood = 294.238,
+    UseHeightmap = false
+  },
+  ["2024-03-14T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.621785,
+    Latitude = 34.00659,
+    Altitude = 0,
+    SpeedMadeGood = 1.92,
+    CourseMadeGood = 120.98,
+    UseHeightmap = false
+  },
+  ["2024-03-15T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.587318,
+    Latitude = 33.962707,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 157.382,
+    UseHeightmap = false
+  },
+  ["2024-03-15T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.58734,
+    Latitude = 33.962718,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 120.967,
+    UseHeightmap = false
+  },
+  ["2024-03-15T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.569755,
+    Latitude = 33.941328,
+    Altitude = 0,
+    SpeedMadeGood = 6.23,
+    CourseMadeGood = 151.924,
+    UseHeightmap = false
+  },
+  ["2024-03-15T03:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.561525,
+    Latitude = 33.932127,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 140.187,
+    UseHeightmap = false
+  },
+  ["2024-03-15T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.561575,
+    Latitude = 33.932078,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 39.813,
+    UseHeightmap = false
+  },
+  ["2024-03-15T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.569308,
+    Latitude = 33.93513,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 311.981,
+    UseHeightmap = false
+  },
+  ["2024-03-15T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.50732,
+    Latitude = 33.885523,
+    Altitude = 0,
+    SpeedMadeGood = 0.81,
+    CourseMadeGood = 304.417,
+    UseHeightmap = false
+  },
+  ["2024-03-15T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.531378,
+    Latitude = 33.901153,
+    Altitude = 0,
+    SpeedMadeGood = 0.65,
+    CourseMadeGood = 284.923,
+    UseHeightmap = false
+  },
+  ["2024-03-15T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.555408,
+    Latitude = 33.916095,
+    Altitude = 0,
+    SpeedMadeGood = 0.6,
+    CourseMadeGood = 288.917,
+    UseHeightmap = false
+  },
+  ["2024-03-15T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.599148,
+    Latitude = 33.902872,
+    Altitude = 0,
+    SpeedMadeGood = 5.96,
+    CourseMadeGood = 221.139,
+    UseHeightmap = false
+  },
+  ["2024-03-15T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.54368,
+    Latitude = 33.839297,
+    Altitude = 0,
+    SpeedMadeGood = 5.81,
+    CourseMadeGood = 288.293,
+    UseHeightmap = false
+  },
+  ["2024-03-15T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.528622,
+    Latitude = 33.896433,
+    Altitude = 0,
+    SpeedMadeGood = 0.39,
+    CourseMadeGood = 337.366,
+    UseHeightmap = false
+  },
+  ["2024-03-15T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.52545,
+    Latitude = 33.895407,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-15T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.5278,
+    Latitude = 33.891752,
+    Altitude = 0,
+    SpeedMadeGood = 0.3,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-15T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.528402,
+    Latitude = 33.897238,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-15T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.528418,
+    Latitude = 33.89723,
+    Altitude = 0,
+    SpeedMadeGood = 0.36,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-15T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.528412,
+    Latitude = 33.89724,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-15T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.535142,
+    Latitude = 33.881595,
+    Altitude = 0,
+    SpeedMadeGood = 0.72,
+    CourseMadeGood = 295.622,
+    UseHeightmap = false
+  },
+  ["2024-03-15T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.534268,
+    Latitude = 33.8861,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-15T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.546195,
+    Latitude = 33.892027,
+    Altitude = 0,
+    SpeedMadeGood = 1.75,
+    CourseMadeGood = 298.055,
+    UseHeightmap = false
+  },
+  ["2024-03-15T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.533457,
+    Latitude = 33.92609,
+    Altitude = 0,
+    SpeedMadeGood = 2.65,
+    CourseMadeGood = 73.851,
+    UseHeightmap = false
+  },
+  ["2024-03-15T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.48743,
+    Latitude = 33.875973,
+    Altitude = 0,
+    SpeedMadeGood = 2.38,
+    CourseMadeGood = 200.34,
+    UseHeightmap = false
+  },
+  ["2024-03-15T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.563548,
+    Latitude = 33.876027,
+    Altitude = 0,
+    SpeedMadeGood = 2.52,
+    CourseMadeGood = 330.923,
+    UseHeightmap = false
+  },
+  ["2024-03-15T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.52716,
+    Latitude = 33.923128,
+    Altitude = 0,
+    SpeedMadeGood = 2.41,
+    CourseMadeGood = 127.944,
+    UseHeightmap = false
+  },
+  ["2024-03-16T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.504822,
+    Latitude = 33.920588,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.50483,
+    Latitude = 33.9206,
+    Altitude = 0,
+    SpeedMadeGood = 0.85,
+    CourseMadeGood = 244.368,
+    UseHeightmap = false
+  },
+  ["2024-03-16T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.504818,
+    Latitude = 33.920585,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.504808,
+    Latitude = 33.9206,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.504952,
+    Latitude = 33.920608,
+    Altitude = 0,
+    SpeedMadeGood = 0.39,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.478658,
+    Latitude = 33.947132,
+    Altitude = 0,
+    SpeedMadeGood = 2.72,
+    CourseMadeGood = 32.007,
+    UseHeightmap = false
+  },
+  ["2024-03-16T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.562407,
+    Latitude = 33.946775,
+    Altitude = 0,
+    SpeedMadeGood = 2.77,
+    CourseMadeGood = 231.955,
+    UseHeightmap = false
+  },
+  ["2024-03-16T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.576142,
+    Latitude = 33.865718,
+    Altitude = 0,
+    SpeedMadeGood = 2.34,
+    CourseMadeGood = 143.873,
+    UseHeightmap = false
+  },
+  ["2024-03-16T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.486585,
+    Latitude = 33.849525,
+    Altitude = 0,
+    SpeedMadeGood = 2.51,
+    CourseMadeGood = 60.089,
+    UseHeightmap = false
+  },
+  ["2024-03-16T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.454728,
+    Latitude = 33.922337,
+    Altitude = 0,
+    SpeedMadeGood = 2.34,
+    CourseMadeGood = 330.936,
+    UseHeightmap = false
+  },
+  ["2024-03-16T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.500045,
+    Latitude = 33.956482,
+    Altitude = 0,
+    SpeedMadeGood = 1.67,
+    CourseMadeGood = 107.745,
+    UseHeightmap = false
+  },
+  ["2024-03-16T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.491635,
+    Latitude = 33.954125,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.494623,
+    Latitude = 33.963505,
+    Altitude = 0,
+    SpeedMadeGood = 0.35,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.509542,
+    Latitude = 33.975637,
+    Altitude = 0,
+    SpeedMadeGood = 0.14,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.509567,
+    Latitude = 33.975638,
+    Altitude = 0,
+    SpeedMadeGood = 0.08,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T15:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.509552,
+    Latitude = 33.975657,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.50954,
+    Latitude = 33.975635,
+    Altitude = 0,
+    SpeedMadeGood = 0.28,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.523222,
+    Latitude = 33.986927,
+    Altitude = 0,
+    SpeedMadeGood = 0.94,
+    CourseMadeGood = 315.011,
+    UseHeightmap = false
+  },
+  ["2024-03-16T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.53216,
+    Latitude = 33.993308,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 320.208,
+    UseHeightmap = false
+  },
+  ["2024-03-16T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.532157,
+    Latitude = 33.993308,
+    Altitude = 0,
+    SpeedMadeGood = 0.14,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.506043,
+    Latitude = 33.96939,
+    Altitude = 0,
+    SpeedMadeGood = 0.0,
+    CourseMadeGood = 90.0,
+    UseHeightmap = false
+  },
+  ["2024-03-16T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.532305,
+    Latitude = 33.987368,
+    Altitude = 0,
+    SpeedMadeGood = 0.92,
+    CourseMadeGood = 310.613,
+    UseHeightmap = false
+  },
+  ["2024-03-16T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.561138,
+    Latitude = 34.007347,
+    Altitude = 0,
+    SpeedMadeGood = 0.92,
+    CourseMadeGood = 310.619,
+    UseHeightmap = false
+  },
+  ["2024-03-16T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.689782,
+    Latitude = 33.928248,
+    Altitude = 0,
+    SpeedMadeGood = 4.9,
+    CourseMadeGood = 234.044,
+    UseHeightmap = false
+  },
+  ["2024-03-17T00:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.724235,
+    Latitude = 33.902253,
+    Altitude = 0,
+    SpeedMadeGood = 4.78,
+    CourseMadeGood = 65.627,
+    UseHeightmap = false
+  },
+  ["2024-03-17T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.566228,
+    Latitude = 33.976973,
+    Altitude = 0,
+    SpeedMadeGood = 4.55,
+    CourseMadeGood = 53.123,
+    UseHeightmap = false
+  },
+  ["2024-03-17T02:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.527258,
+    Latitude = 33.994908,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 22.61,
+    UseHeightmap = false
+  },
+  ["2024-03-17T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.52795,
+    Latitude = 33.991003,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-17T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.528042,
+    Latitude = 33.990922,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-17T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.554285,
+    Latitude = 33.984138,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 270.0,
+    UseHeightmap = false
+  },
+  ["2024-03-17T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.532377,
+    Latitude = 33.965818,
+    Altitude = 0,
+    SpeedMadeGood = 0.38,
+    CourseMadeGood = 308.664,
+    UseHeightmap = false
+  },
+  ["2024-03-17T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.559362,
+    Latitude = 33.979098,
+    Altitude = 0,
+    SpeedMadeGood = 0.73,
+    CourseMadeGood = 308.668,
+    UseHeightmap = false
+  },
+  ["2024-03-17T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.546915,
+    Latitude = 33.951693,
+    Altitude = 0,
+    SpeedMadeGood = 2.24,
+    CourseMadeGood = 150.945,
+    UseHeightmap = false
+  },
+  ["2024-03-17T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.543423,
+    Latitude = 33.944593,
+    Altitude = 0,
+    SpeedMadeGood = 0.37,
+    CourseMadeGood = 239.039,
+    UseHeightmap = false
+  },
+  ["2024-03-17T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.55271,
+    Latitude = 33.936082,
+    Altitude = 0,
+    SpeedMadeGood = 0.36,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-17T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.552668,
+    Latitude = 33.93609,
+    Altitude = 0,
+    SpeedMadeGood = 0.24,
+    CourseMadeGood = 219.811,
+    UseHeightmap = false
+  },
+  ["2024-03-17T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.573527,
+    Latitude = 33.918823,
+    Altitude = 0,
+    SpeedMadeGood = 0.18,
+    CourseMadeGood = 39.817,
+    UseHeightmap = false
+  },
+  ["2024-03-17T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.549492,
+    Latitude = 33.869668,
+    Altitude = 0,
+    SpeedMadeGood = 3.64,
+    CourseMadeGood = 154.7,
+    UseHeightmap = false
+  },
+  ["2024-03-17T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.526167,
+    Latitude = 33.836267,
+    Altitude = 0,
+    SpeedMadeGood = 0.58,
+    CourseMadeGood = 344.455,
+    UseHeightmap = false
+  },
+  ["2024-03-17T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.468103,
+    Latitude = 33.773568,
+    Altitude = 0,
+    SpeedMadeGood = 6.02,
+    CourseMadeGood = 137.492,
+    UseHeightmap = false
+  },
+  ["2024-03-17T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.314822,
+    Latitude = 33.621152,
+    Altitude = 0,
+    SpeedMadeGood = 6.1,
+    CourseMadeGood = 140.084,
+    UseHeightmap = false
+  },
+  ["2024-03-17T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.157443,
+    Latitude = 33.464353,
+    Altitude = 0,
+    SpeedMadeGood = 6.37,
+    CourseMadeGood = 139.411,
+    UseHeightmap = false
+  },
+  ["2024-03-17T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -120.000423,
+    Latitude = 33.307607,
+    Altitude = 0,
+    SpeedMadeGood = 6.78,
+    CourseMadeGood = 142.468,
+    UseHeightmap = false
+  },
+  ["2024-03-17T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.8434,
+    Latitude = 33.150497,
+    Altitude = 0,
+    SpeedMadeGood = 6.23,
+    CourseMadeGood = 141.207,
+    UseHeightmap = false
+  },
+  ["2024-03-17T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.642768,
+    Latitude = 33.042493,
+    Altitude = 0,
+    SpeedMadeGood = 6.22,
+    CourseMadeGood = 123.791,
+    UseHeightmap = false
+  },
+  ["2024-03-17T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.440662,
+    Latitude = 32.934443,
+    Altitude = 0,
+    SpeedMadeGood = 6.64,
+    CourseMadeGood = 121.495,
+    UseHeightmap = false
+  },
+  ["2024-03-17T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.233983,
+    Latitude = 32.823888,
+    Altitude = 0,
+    SpeedMadeGood = 6.25,
+    CourseMadeGood = 123.725,
+    UseHeightmap = false
+  },
+  ["2024-03-17T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -119.034293,
+    Latitude = 32.70531,
+    Altitude = 0,
+    SpeedMadeGood = 6.3,
+    CourseMadeGood = 131.389,
+    UseHeightmap = false
+  },
+  ["2024-03-18T00:01:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.85012,
+    Latitude = 32.56775,
+    Altitude = 0,
+    SpeedMadeGood = 6.31,
+    CourseMadeGood = 133.073,
+    UseHeightmap = false
+  },
+  ["2024-03-18T01:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.67571,
+    Latitude = 32.437287,
+    Altitude = 0,
+    SpeedMadeGood = 6.03,
+    CourseMadeGood = 132.871,
+    UseHeightmap = false
+  },
+  ["2024-03-18T02:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.534635,
+    Latitude = 32.355305,
+    Altitude = 0,
+    SpeedMadeGood = 2.88,
+    CourseMadeGood = 54.745,
+    UseHeightmap = false
+  },
+  ["2024-03-18T03:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.447182,
+    Latitude = 32.398953,
+    Altitude = 0,
+    SpeedMadeGood = 2.74,
+    CourseMadeGood = 55.489,
+    UseHeightmap = false
+  },
+  ["2024-03-18T04:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.35899,
+    Latitude = 32.442555,
+    Altitude = 0,
+    SpeedMadeGood = 2.6,
+    CourseMadeGood = 56.315,
+    UseHeightmap = false
+  },
+  ["2024-03-18T05:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.269682,
+    Latitude = 32.486343,
+    Altitude = 0,
+    SpeedMadeGood = 3.19,
+    CourseMadeGood = 58.606,
+    UseHeightmap = false
+  },
+  ["2024-03-18T06:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.184823,
+    Latitude = 32.52821,
+    Altitude = 0,
+    SpeedMadeGood = 2.26,
+    CourseMadeGood = 60.66,
+    UseHeightmap = false
+  },
+  ["2024-03-18T07:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.103218,
+    Latitude = 32.568457,
+    Altitude = 0,
+    SpeedMadeGood = 2.65,
+    CourseMadeGood = 62.543,
+    UseHeightmap = false
+  },
+  ["2024-03-18T08:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -118.023625,
+    Latitude = 32.60756,
+    Altitude = 0,
+    SpeedMadeGood = 2.46,
+    CourseMadeGood = 57.201,
+    UseHeightmap = false
+  },
+  ["2024-03-18T09:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.943982,
+    Latitude = 32.6468,
+    Altitude = 0,
+    SpeedMadeGood = 2.46,
+    CourseMadeGood = 57.189,
+    UseHeightmap = false
+  },
+  ["2024-03-18T10:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.865193,
+    Latitude = 32.685548,
+    Altitude = 0,
+    SpeedMadeGood = 2.38,
+    CourseMadeGood = 55.953,
+    UseHeightmap = false
+  },
+  ["2024-03-18T11:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.782827,
+    Latitude = 32.725965,
+    Altitude = 0,
+    SpeedMadeGood = 2.51,
+    CourseMadeGood = 63.76,
+    UseHeightmap = false
+  },
+  ["2024-03-18T12:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.702838,
+    Latitude = 32.765178,
+    Altitude = 0,
+    SpeedMadeGood = 2.18,
+    CourseMadeGood = 59.384,
+    UseHeightmap = false
+  },
+  ["2024-03-18T13:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.623003,
+    Latitude = 32.804382,
+    Altitude = 0,
+    SpeedMadeGood = 2.31,
+    CourseMadeGood = 58.191,
+    UseHeightmap = false
+  },
+  ["2024-03-18T14:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.548075,
+    Latitude = 32.841117,
+    Altitude = 0,
+    SpeedMadeGood = 0.93,
+    CourseMadeGood = 53.485,
+    UseHeightmap = false
+  },
+  ["2024-03-18T15:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.531593,
+    Latitude = 32.849268,
+    Altitude = 0,
+    SpeedMadeGood = 0.11,
+    CourseMadeGood = 180.0,
+    UseHeightmap = false
+  },
+  ["2024-03-18T16:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.531582,
+    Latitude = 32.84927,
+    Altitude = 0,
+    SpeedMadeGood = 0.29,
+    CourseMadeGood = 139.833,
+    UseHeightmap = false
+  },
+  ["2024-03-18T17:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.452143,
+    Latitude = 32.779382,
+    Altitude = 0,
+    SpeedMadeGood = 3.69,
+    CourseMadeGood = 138.699,
+    UseHeightmap = false
+  },
+  ["2024-03-18T18:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.349818,
+    Latitude = 32.686325,
+    Altitude = 0,
+    SpeedMadeGood = 3.95,
+    CourseMadeGood = 134.579,
+    UseHeightmap = false
+  },
+  ["2024-03-18T19:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.262982,
+    Latitude = 32.618582,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 59.425,
+    UseHeightmap = false
+  },
+  ["2024-03-18T20:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.24166,
+    Latitude = 32.630453,
+    Altitude = 0,
+    SpeedMadeGood = 0.22,
+    CourseMadeGood = 0.0,
+    UseHeightmap = false
+  },
+  ["2024-03-18T21:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.240838,
+    Latitude = 32.629695,
+    Altitude = 0,
+    SpeedMadeGood = 0.44,
+    CourseMadeGood = 139.762,
+    UseHeightmap = false
+  },
+  ["2024-03-18T22:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.317882,
+    Latitude = 32.634725,
+    Altitude = 0,
+    SpeedMadeGood = 4.04,
+    CourseMadeGood = 273.146,
+    UseHeightmap = false
+  },
+  ["2024-03-18T23:00:00"] = {
+    Type = "GlobeTranslation",
+    Globe = "Earth",
+    Longitude = -117.367473,
+    Latitude = 32.637992,
+    Altitude = 0,
+    SpeedMadeGood = 0.15,
+    CourseMadeGood = 40.235,
+    UseHeightmap = false
+  },
+}
+    
+    asset.export("keyframes", keyframes)
+    
+    asset.meta = {
+      Name = "Ship Track Position: RR2402",
+      Description = [[This asset provides position information for the ship track for the cruise RR2402: Processed Trackline Navigation Data: One Minute Resolution]],
+      Author = "OpenSpace Team",
+      URL = "http://doi.org/10.7284/160211",
+      License = "MIT license"
+    }
+    
