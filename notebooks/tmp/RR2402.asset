@@ -1,0 +1,108 @@
+local sun = asset.require("scene/solarsystem/sun/transforms")
+local earthTransforms = asset.require("scene/solarsystem/planets/earth/earth")
+local shipModelAsset = asset.require("./Revelle_model") -- Require the ship's model asset
+
+-- The keyframes for the ship's trajectory
+local shipKeyframes = asset.require("./RR2402_keyframes") -- Assumes RR2402_keyframes.asset defines 'keyframes'
+
+-- Define the ship's position based on the keyframes
+local shipPosition = {
+    Identifier = "ShipPosition_RR2402",
+    Parent = earthTransforms.Earth.Identifier, -- Parent the asset to Earth
+    TimeFrame = {
+        Type = "TimeFrameInterval",
+        Start = "2024-02-17T00:00:00.00Z",
+        End = "2024-03-19T00:00:00.00Z"
+    },
+    Transform = {
+        Translation = {
+            Type = "TimelineTranslation",
+            Keyframes = shipKeyframes.keyframes
+        }
+    },
+    GUI = {
+        Name = "RR2402 Position",
+        Path = "/Ship Tracks" -- A new path for your custom asset
+    }
+}
+
+-- Define the ship model to be rendered
+local shipRenderable = {
+    Identifier = "ShipModel_RR2402",
+    Parent = shipPosition.Identifier,
+    TimeFrame = {
+        Type = "TimeFrameInterval",
+        Start = "2024-02-17T00:00:00.00Z",
+        End = "2024-03-19T00:00:00.00Z"
+    },
+    Transform = {
+        Scale = {
+            Type = "StaticScale",
+            Scale = 1000.0 -- You might need to adjust this scale based on your model's size and desired visibility
+        }
+    },
+    Renderable = {
+        Type = "RenderableModel",
+        GeometryFile = shipModelAsset.shipModel.Identifier, -- Reference the model's identifier from the required asset
+        LightSources = {
+            sun.LightSource,
+            {
+                Identifier = "Camera",
+                Type = "CameraLightSource",
+                Intensity = 0.5
+            }
+        }
+    },
+    GUI = {
+        Name = "RR2402 Model",
+        Path = "/Ship Tracks"
+    }
+}
+
+-- Define the trail for the ship's trajectory
+local shipTrail = {
+    Identifier = "ShipTrail_RR2402",
+    Parent = earthTransforms.Earth.Identifier, -- Parent the trail to Earth
+    Renderable = {
+        Type = "RenderableTrailTrajectory",
+        Enabled = true, -- Set to true to show the trail by default
+        Translation = {
+            Type = "TimelineTranslation",
+            Keyframes = shipKeyframes.keyframes
+        },
+        Color = { 1.0, 0.5, 0.0 }, -- An orange trail for visibility (RGB values 0-1)
+        StartTime = "2024-02-17T00:00:00.00Z",
+        EndTime = "2024-03-19T00:00:00.00Z",
+        SampleInterval = 60, -- Sample every 60 seconds
+        EnableFade = true -- Enable fade for the trail
+    },
+    GUI = {
+        Name = "RR2402 Trail",
+        Path = "/Ship Tracks",
+        Focusable = false
+    }
+}
+
+asset.onInitialize(function()
+    openspace.addSceneGraphNode(shipPosition)
+    openspace.addSceneGraphNode(shipRenderable)
+    openspace.addSceneGraphNode(shipTrail)
+end)
+
+asset.onDeinitialize(function()
+    openspace.removeSceneGraphNode(shipTrail)
+    openspace.removeSceneGraphNode(shipRenderable)
+    openspace.removeSceneGraphNode(shipPosition)
+end)
+
+asset.export(shipPosition)
+asset.export(shipRenderable)
+asset.export(shipTrail)
+
+asset.meta = {
+    Name = "Ship Track Position: RR2402",
+    Description = [[This asset provides position information for the ship track for the cruise RR2402 (Revelle): LTER: Ecosystem controls and multiple stressors in a coastal upwelling system - CCE IV.]],
+    Author = "OpenSpace Team",
+    URL = "http://doi.org/10.7284/910464",
+    License = "MIT license"
+}
