@@ -17,7 +17,7 @@ flowchart TD
     n4 --> n5["cruise_id.asset"]
     n6["cruise_id, sampling rate"] --> n7["get_cruise_nav"]
     n7 --> n8["geoCSV"]
-    n8 --> n9["geocsv2geojson"] & n10["cruise_id.geojson"] & n11["geocsv2hypergram"] & n13["get_cruise_keyframes"]
+    n8 --> n9["geocsv2geojson"] & n10["cruise_id.geojson"] & n11["plotly.express"] & n13["get_cruise_keyframes"]
     n9 --> n10
     n11 --> n12["cruise_id.html"]
     n13 --> n14["cruise_id_keyframes.asset"]
@@ -28,6 +28,7 @@ flowchart TD
     n6@{ shape: manual-input}
     n8@{ shape: document}
     n9@{ shape:document}
+    n11@{ shape:curv-trap}
     n12@{ shape: document}
     n14@{ shape: document}
     click n1 "https://www.rvdata.us/search/cruise/RR2402"
