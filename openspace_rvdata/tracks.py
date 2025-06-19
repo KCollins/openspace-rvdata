@@ -144,7 +144,7 @@ local shipPosition = {{
     }},
     GUI = {{
         Name = "{cruise_id} Position",
-        Path = "/Ship Tracks" -- A new path for your custom asset
+        Path = "/Ship Tracks/{vessel_shortname}/{cruise_id}" -- A new path for your custom asset
     }}
 }}
 
@@ -177,7 +177,7 @@ local shipRenderable = {{
     }},
     GUI = {{
         Name = "{vessel_shortname} Model",
-        Path = "/Ship Tracks"
+        Path = "/Ship Tracks/{vessel_shortname}/{cruise_id}"
     }}
 }}
 
@@ -200,7 +200,7 @@ local shipTrail = {{
     }},
     GUI = {{
         Name = "{cruise_id} Trail",
-        Path = "/Ship Tracks",
+        Path = "/Ship Tracks/{vessel_shortname}/{cruise_id}",
         Focusable = false
     }}
 }}
