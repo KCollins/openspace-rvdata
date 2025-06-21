@@ -1,0 +1,24 @@
+{
+    "keywords": [
+	"OpenSpace",
+	"coordinates",
+	"oceanography",
+	"research vessel",
+	"Rolling Deck 2 Repository",
+	"visualization",
+	"geoCSV",
+	"analysis"
+    ],
+    "creators": [
+      {
+        "affiliation": "Space Science Institute",
+        "name": "Kristina Collins",
+        "orcid": "0000-0002-3816-1948"
+      },
+      {
+	"orcid": "0000-0003-1076-164X",
+        "affiliation": "University of Southern California",
+        "name": "Kiefer Forsch"
+      },
+    ]
+}
