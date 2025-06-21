@@ -1,10 +1,10 @@
-import pandas as pd
-import requests # This library is essential for making HTTP requests
 from datetime import datetime as dt # Still useful if you need to manually construct datetimes
 import os
 import tarfile
 import re # For regular expressions to find the correct geoCSV file
 import json # Added for parsing nested JSON strings
+import pandas as pd
+import requests # This library is essential for making HTTP requests
 
 def get_r2r_url(cruise_id=None, doi=None, vessel_name=None):
     """
@@ -117,13 +117,6 @@ def get_cruise_metadata(url):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return pd.DataFrame()
-
-import requests
-import pandas as pd
-import os
-import tarfile
-import re # For regular expressions to find the correct geoCSV file
-import json # Added for parsing nested JSON strings
 
 def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame:
     """

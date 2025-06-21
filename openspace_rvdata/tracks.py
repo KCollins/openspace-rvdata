@@ -35,10 +35,8 @@ def get_cruise_keyframes(fname, resample_rate="60min"):
     cruise_id = mdf.loc["cruise_id", "Value"]
     cruise_doi = mdf.loc["source_dataset", "Value"].strip("doi:")
     cruise_title = mdf.loc["title", "Value"]
-    
     before_text = """local keyframes = {
     """
-    
     after_text = f"""}}
     
     asset.export("keyframes", keyframes)
@@ -51,15 +49,13 @@ def get_cruise_keyframes(fname, resample_rate="60min"):
       License = "MIT license"
     }}
     """
-    
     # Specify the output file name
     os.makedirs("tmp", exist_ok=True)
     output_filename = "tmp/" + cruise_id+"_keyframes.asset"
-    
+
     # Open the file in write mode and write the content
     with open(output_filename, "w") as f:
         f.write(before_text) # Write the "before" text first
-    
         # Iterate through each row of the DataFrame, format it, and write to the file
         for index, row in df.iterrows():
             if index<len(df):
@@ -67,7 +63,7 @@ def get_cruise_keyframes(fname, resample_rate="60min"):
             else:
                 f.write(format_row_to_text(row) + "\n") #skip comma on last entry
         f.write(after_text) # Write the "after" text
-    
+
     print(f"Successfully generated '{output_filename}' with the formatted data.")
 
 def get_cruise_asset(mdf: pd.DataFrame):
@@ -101,7 +97,7 @@ def get_cruise_asset(mdf: pd.DataFrame):
             cruise_name = row['cruise_name'] # Still useful for meta description
             cruise_doi = row['cruise_doi']
             vessel_shortname = row['vessel_shortname'] # Get the vessel name for this cruise
-            
+
             # Safe identifier for referencing the ship model asset
             # This is used for the Identifier in the inlined shipModel asset.
             safe_vessel_id = vessel_shortname.replace(" ", "_").replace("/", "_").replace("\\", "_").replace(".", "_").replace("-", "_")

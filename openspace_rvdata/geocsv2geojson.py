@@ -1,7 +1,6 @@
-
-import pandas as pd
-import json
 import io
+import json
+import pandas as pd
 
 def get_comment_dataframe(fname):
     """
@@ -55,7 +54,7 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
     """
     # pull metadata from CSV file
     metadata_df = get_comment_dataframe(csv_file_path)
-    
+
     # Use io.StringIO to simulate a file for pandas to read after skipping comments
     with open(csv_file_path, 'r') as f:
         # Read lines, filtering out those starting with '#'
@@ -76,7 +75,6 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
 
     # Prepare properties for the GeoJSON Feature
     # You can include any relevant metadata from the CSV or original GeoCSV header
- 
     properties = {
         "title": metadata_df.loc['cruise_id', 'Value'],
         "description": "Ship track data converted from GeoCSV.",
@@ -108,5 +106,4 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
         json.dump(geojson_data, f, indent=2)
 
     print(f"GeoJSON file saved successfully to {output_geojson_path}")
-
-
+    
