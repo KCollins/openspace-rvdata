@@ -4,8 +4,22 @@ Ship track plots for [OpenSpace](https://www.openspaceproject.com) pulling data 
 ![image](https://github.com/user-attachments/assets/c397de8c-c8c4-4e8a-8ade-32f351be42fb)
 
 
-## Examples
-### [RR2402](https://www.rvdata.us/search/cruise/RR2402)
+## Minimum Working Example
+Here's a snippet to pull data for [RR2402](https://www.rvdata.us/search/cruise/RR2402).
+
+```
+import openspace_rvdata.r2r2df as r2r
+import openspace_rvdata.tracks as trk
+cruise_id = "RR2402"
+url = r2r.get_r2r_url(cruise_id)
+mdf = r2r.get_cruise_metadata(url)
+gdf = r2r.get_cruise_nav(cruise_id)
+trk.get_cruise_asset(mdf)
+trk.get_cruise_keyframes("tmp/"+cruise_id+"_1min.geoCSV")
+```
+This will generate two dataframes: `mdf`, containing metadata, and `gdf`, containing time-referenced coordinates. It will save the data in geoCSV format to a local folder /tmp, along with the two OpenSpace assets required to view the cruise data in OpenSpace: `RR2402.asset` (metadata) and `RR2402_keyframes.asset` (coordinates). 
+
+Once you have generated the assets, you can import them into OpenSpace by dragging and dropping the assets. You can also move them into your local OpenSpace asset directory and add them to your profile. Refer to the [OpenSpace documentation](https://docs.openspaceproject.com/latest/creating-data-assets/asset-creation/assets.html) for more information about creation and import of assets. 
 
 ## Software Architecture
 The highlighted blocks are OpenSpace assets.
