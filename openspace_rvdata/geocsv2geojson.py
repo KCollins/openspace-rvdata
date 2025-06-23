@@ -1,3 +1,5 @@
+"""This module supports conversion of geoCSV files to geoJSON files."""
+
 import io
 import json
 import pandas as pd
@@ -35,9 +37,6 @@ def get_comment_dataframe(fname):
     except FileNotFoundError:
         print(f"Error: The file '{fname}' was not found.")
         return pd.DataFrame(columns=['Value']) # Return an empty DataFrame on error
-    except Exception as e:
-        print(f"An error occurred while reading the file: {e}")
-        return pd.DataFrame(columns=['Value']) # Return an empty DataFrame on error
 
     # Convert the dictionary to a pandas DataFrame
     # The dictionary keys become the DataFrame's index, and values go into the 'Value' column
@@ -56,7 +55,7 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
     metadata_df = get_comment_dataframe(csv_file_path)
 
     # Use io.StringIO to simulate a file for pandas to read after skipping comments
-    with open(csv_file_path, 'r') as f:
+    with open(csv_file_path, 'r', encoding='utf-8') as f:
         # Read lines, filtering out those starting with '#'
         lines = [line for line in f if not line.strip().startswith('#')]
 
@@ -70,7 +69,7 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
 
     # Prepare the list of coordinates (longitude, latitude) for the LineString
     coordinates = []
-    for index, row in df.iterrows():
+    for _, row in df.iterrows():
         coordinates.append([row['ship_longitude'], row['ship_latitude']])
 
     # Prepare properties for the GeoJSON Feature
@@ -102,7 +101,7 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
     }
 
     # Save the GeoJSON data to a file
-    with open(output_geojson_path, 'w') as f:
+    with open(output_geojson_path, 'w', encoding='utf-8') as f:
         json.dump(geojson_data, f, indent=2)
 
     print(f"GeoJSON file saved successfully to {output_geojson_path}")
