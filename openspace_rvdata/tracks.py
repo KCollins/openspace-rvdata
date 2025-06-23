@@ -1,10 +1,15 @@
+"""This module supports the generation of OpenSpace asset files."""
+
 import os
 import pandas as pd
-from datetime import datetime as dt
 import openspace_rvdata.geocsv2geojson as g2g
 
 # Function to format each row into the desired text block
 def format_row_to_text(row):
+    """
+    Generates a formatted string from each row of the coordinate dataframe.
+    """
+
     # Extract the timestamp, removing the ".00Z" part
     iso_time_formatted = f'["{row["iso_time"].split(".")[0]}"]'
 
@@ -22,6 +27,9 @@ def format_row_to_text(row):
     return formatted_string
 
 def get_cruise_keyframes(fname, resample_rate="60min"):
+    """
+    Generates a keyframe asset from geoCSV; saves to local /tmp directory.
+    """
     df = pd.read_csv(fname, comment = '#')
     df['datetime'] = pd.to_datetime(df['iso_time'])
     df.index = df['datetime']
@@ -54,7 +62,7 @@ def get_cruise_keyframes(fname, resample_rate="60min"):
     output_filename = "tmp/" + cruise_id+"_keyframes.asset"
 
     # Open the file in write mode and write the content
-    with open(output_filename, "w") as f:
+    with open(output_filename, "w", encoding = "utf-8") as f:
         f.write(before_text) # Write the "before" text first
         # Iterate through each row of the DataFrame, format it, and write to the file
         for index, row in df.iterrows():
@@ -66,6 +74,7 @@ def get_cruise_keyframes(fname, resample_rate="60min"):
 
     print(f"Successfully generated '{output_filename}' with the formatted data.")
 
+# Function to generate assets based on cruise metadata
 def get_cruise_asset(mdf: pd.DataFrame):
     """
     Generates and saves a Lua asset file for each cruise in the DataFrame.
@@ -91,7 +100,7 @@ def get_cruise_asset(mdf: pd.DataFrame):
     mdf.columns = mdf.columns.str.strip()
 
     # --- Iterate through each row (cruise) in the DataFrame to generate cruise assets ---
-    for index, row in mdf.iterrows():
+    for _, row in mdf.iterrows():
         try:
             cruise_id = row['cruise_id']
             cruise_name = row['cruise_name'] # Still useful for meta description
@@ -100,8 +109,8 @@ def get_cruise_asset(mdf: pd.DataFrame):
 
             # Safe identifier for referencing the ship model asset
             # This is used for the Identifier in the inlined shipModel asset.
-            safe_vessel_id = vessel_shortname.replace(" ", "_").replace("/", "_").replace("\\", "_").replace(".", "_").replace("-", "_")
-            
+            safe_vessel_id = vessel_shortname.replace(" ", "_").replace("/", "_").replace("\\", "_").replace(".", "_").replace("-", "_") # pylint: disable=C0301
+
             # Convert dates to ISO 8601 format required by OpenSpace Lua assets
             depart_date_str = pd.to_datetime(row['depart_date']).strftime("%Y-%m-%dT%H:%M:%S.00Z")
             arrive_date_str = pd.to_datetime(row['arrive_date']).strftime("%Y-%m-%dT%H:%M:%S.00Z")
@@ -227,12 +236,10 @@ asset.meta = {{
 """
             # --- Save the content to a file ---
             file_path = os.path.join(output_directory, f"{cruise_id}.asset")
-            with open(file_path, "w") as f:
+            with open(file_path, "w", encoding = "utf-8") as f:
                 f.write(lua_content)
             print(f"Generated asset file: {file_path}")
 
         except KeyError as e:
             print(f"Skipping row due to missing column: {e}. Check DataFrame columns.")
             print(f"Row data: {row.to_dict()}")
-        except Exception as e:
-            print(f"An unexpected error occurred for cruise '{row.get('cruise_id', 'N/A')}': {e}")
