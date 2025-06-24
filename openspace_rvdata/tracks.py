@@ -9,15 +9,19 @@ def get_comment_dataframe(fname):
     """
     Reads a CSV file, extracts lines starting with '#', and returns them as a pandas DataFrame.
 
-    Args:
-        fname (str): The path to the CSV file.
+    Parameters
+    ----------
+    fname : str
+        The path to the CSV file.
 
-    Returns:
-        pandas.DataFrame: A DataFrame where the index represents the extracted
-                          keys from comment lines (e.g., 'dataset', 'title'),
-                          and the 'Value' column contains their corresponding values.
-                          Returns an empty DataFrame if the file is not found or no
-                          comment lines are present.
+    Returns
+    -------
+    pandas.DataFrame
+        A DataFrame where the index represents the extracted keys from comment lines
+        (e.g., 'dataset', 'title'), and the 'Value' column contains their
+        corresponding values. Returns an empty DataFrame if the file is not found
+        or no comment lines are present.
+        
     """
     comment_data = {}
     try:
@@ -48,9 +52,20 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
     """
     Converts a GeoCSV file into a GeoJSON LineString feature collection.
 
-    Args:
-        csv_file_path (str): The path to the input GeoCSV file.
-        output_geojson_path (str): The path where the output GeoJSON file will be saved.
+    Parameters
+    ----------
+    csv_file_path : str
+        The path to the input GeoCSV file.
+    output_geojson_path : str
+        The path where the output GeoJSON file will be saved.
+
+    Examples
+    --------
+    >>> import openspace_rvdata.tracks as trk
+    >>> csv_path = "tmp/RR2402_1min.geoCSV"
+    >>> geojson_path = "tmp/RR2402_1min.geoJSON"
+    >>> trk.convert_geocsv_to_geojson(csv_path, geojson_path)
+
     """
     # pull metadata from CSV file
     metadata_df = get_comment_dataframe(csv_file_path)
@@ -110,7 +125,35 @@ def convert_geocsv_to_geojson(csv_file_path, output_geojson_path):
 # Function to format each row into the desired text block
 def format_row_to_text(row):
     """
-    Generates a formatted string from each row of the coordinate dataframe.
+    Generates an OpenSpace keyframe asset file from a GeoCSV file.
+
+    This function reads a GeoCSV file, extracts and resamples navigation data,
+    and embeds it into a Lua-based OpenSpace asset file format. It also
+    incorporates cruise metadata extracted from the GeoCSV comments. The
+    resulting asset file is saved to a local 'tmp' directory.
+
+    Parameters
+    ----------
+    fname : str
+        The path to the input GeoCSV file containing navigation data.
+    resample_rate : str, default "60min"
+        The desired sampling rate for the output keyframes. This string should be
+        compatible with pandas' `resample` method (e.g., "1min", "30s", "1H").
+
+    Raises
+    ------
+    FileNotFoundError
+        If the specified `fname` does not exist.
+    KeyError
+        If required metadata keys ('cruise_id', 'source_dataset', 'title') are not
+        found in the GeoCSV comments via `get_comment_dataframe`, or if essential
+        columns like 'iso_time', 'ship_longitude', or 'ship_latitude' are missing
+        from the GeoCSV data.
+    ValueError
+        If the 'iso_time' column cannot be parsed into datetime objects or
+        if `resample_rate` is not a valid pandas frequency string.
+    IOError
+        If there is an issue writing the output keyframe asset file.
     """
 
     # Extract the timestamp, removing the ".00Z" part
@@ -182,18 +225,25 @@ def get_cruise_asset(mdf: pd.DataFrame):
     """
     Generates and saves a Lua asset file for each cruise in the DataFrame.
 
-    Each cruise Lua file is named 'tmp/{cruise_id}.asset' and contains dynamic
-    information from the cruise's row in the DataFrame, including the
-    definition of the shared ship model asset.
+    Each cruise's Lua asset file is named 'tmp/{cruise_id}.asset'. These files
+    contain dynamic information derived from the corresponding cruise's row in
+    the input DataFrame, including the definition of a shared ship model asset
+    for visualization in OpenSpace.
 
-    Args:
-        mdf (pd.DataFrame): The input DataFrame containing cruise metadata.
-                            Expected columns (after stripping whitespace):
-                            'cruise_id', 'cruise_name', 'cruise_doi',
-                            'depart_date', 'arrival_date', 'vessel_shortname'.
-                            'depart_date' and 'arrival_date' should be in 'YYYY-MM-DD' format.
+    Parameters
+    ----------
+    mdf : pandas.DataFrame
+        The input DataFrame containing cruise metadata.
+
+        Expected columns include (after stripping whitespace):
+        'cruise_id' : Unique identifier for the cruise (e.g., "RR2402").
+        'cruise_name' : Full name of the cruise.
+        'cruise_doi' : Digital Object Identifier for the cruise data.
+        'depart_date' : Start date of the cruise in 'YYYY-MM-DD' format.
+        'arrival_date' : End date of the cruise in 'YYYY-MM-DD' format.
+        'vessel_shortname' : Short name of the vessel (e.g., "Revelle").
+        
     """
-
     # Ensure the 'tmp' directory exists
     output_directory = "tmp"
     os.makedirs(output_directory, exist_ok=True)

@@ -10,26 +10,38 @@ import requests # This library is essential for making HTTP requests
 def get_r2r_url(cruise_id=None, doi=None, vessel_name=None):
     """
     Generates a URL for the rvdata.us R2R (Rolling Deck to Repository) API.
+
     This function does not encompass all the options offered by the API, but
     allows for lookup by cruise_id, DOI, or vessel name.
 
-    Args:
-        cruise_id (str, optional): The unique identifier for a cruise (e.g., "RR2402").
-                                   If provided, it will construct a URL for that specific cruise.
-        doi (str, optional): A Digital Object Identifier (DOI) associated with cruise data
-                             (e.g., "10.7284/910464"). The function will extract the numerical
-                             suffix for the URL.
-        vessel_name (str, optional): The name of a vessel (e.g., "Revelle").
+    Parameters
+    ----------
+    cruise_id : str, optional
+        The unique identifier for a cruise (e.g., "RR2402").
+        If provided, it will construct a URL for that specific cruise.
+    doi : str, optional
+        A Digital Object Identifier (DOI) associated with cruise data
+        (e.g., "10.7284/910464"). The function will extract the numerical
+        suffix for the URL.
+    vessel_name : str, optional
+        The name of a vessel (e.g., "Revelle").
 
-    Returns:
-        str: The constructed R2R API URL.
+    Returns
+    -------
+    str
+        The constructed R2R API URL.
 
-    Raises:
-        ValueError: If no arguments are given or an invalid combination of arguments is provided.
+    Raises
+    ------
+    ValueError
+        If no arguments are given or an invalid combination of arguments is provided.
 
-    Example:
-        url = r2r.get_cruise_url("RR2402")
-
+    Examples
+    --------
+    >>> import openspace_rvdata as r2r
+    >>> url = r2r.get_r2r_url("RR2402")
+    >>> print(url)
+    https://www.rvdata.us/api/cruise/RR2402
     """
     base_url = "https://service.rvdata.us/api/cruise/"
 
@@ -59,21 +71,28 @@ def get_cruise_metadata(url):
     """
     Fetches cruise data from the rvdata.us API and parses it into a pandas DataFrame.
 
-    Args:
-        url (str): The URL for the cruise(s) of interest; e.g.,
+    Parameters
+    ----------
+    url : str
+        The URL for the cruise(s) of interest; e.g.,
         "https://service.rvdata.us/api/cruise/cruise_id/RR2402"
         "https://service.rvdata.us/api/cruise/doi/910464"
         "https://service.rvdata.us/api/cruise/vessel/Revelle"
 
-    Returns:
-        pandas.DataFrame: A DataFrame containing the cruise data, or an empty
-                          DataFrame if data fetching fails or is empty.
+    Returns
+    -------
+    pandas.DataFrame
+        A DataFrame containing the cruise data, or an empty
+        DataFrame if data fetching fails or is empty.
 
-    Example Use:
-        mdf = r2r.get_cruise_metadata(url)
-    
+    Examples
+    --------
+    >>> import openspace_rvdata as r2r
+    >>> # Assuming you've generated a URL using get_r2r_url
+    >>> url = r2r.get_r2r_url(cruise_id="RR2402")
+    >>> mdf = r2r.get_cruise_metadata(url)
+    >>> print(mdf.head()) # Or some other way to show expected output
     """
-
     try:
         response = requests.get(url, timeout = 60)
         response.raise_for_status() # Raise an HTTPError for bad responses (4xx or 5xx)
@@ -123,26 +142,42 @@ def get_cruise_metadata(url):
 def get_cruise_nav(cruise_id: str, sampling_rate: str = "60min") -> pd.DataFrame:
     """
     Fetches navigation data for a given cruise from the R2R repository (rvdata.org),
-    processes it, and returns a resampled pandas DataFrame. Handles both .tar.gz archives
-    and direct access to .geoCSV files within a /data subdirectory.
+    processes it, and returns a resampled pandas DataFrame.
 
-    Args:
-        cruise_id (str): The ID of the cruise (e.g., "RR2402").
-        sampling_rate (str): The desired sampling rate for the output DataFrame
-                             (e.g., "1min", "60min", "1H"). Defaults to "60min".
-                             This string should be compatible with pandas' resample method.
+    Handles both .tar.gz archives and direct access to .geoCSV files within a
+    /data subdirectory.
 
-    Returns:
-        pandas.DataFrame: A DataFrame containing the navigation data, resampled
-                          to the specified rate. The DataFrame will have a DatetimeIndex.
+    Parameters
+    ----------
+    cruise_id : str
+        The ID of the cruise (e.g., "RR2402").
+    sampling_rate : str, default "60min"
+        The desired sampling rate for the output DataFrame
+        (e.g., "1min", "60min", "1H"). This string should be compatible
+        with pandas' resample method.
 
-    Raises:
-        requests.exceptions.RequestException: If there's a problem with the network request.
-        FileNotFoundError: If the expected .geocsv file is not found after extraction/download.
-        ValueError: If the 'Navigation' product type is not found or if a suitable
-                    time column for resampling cannot be identified.
-    """
+    Returns
+    -------
+    pandas.DataFrame
+        A DataFrame containing the navigation data, resampled
+        to the specified rate. The DataFrame will have a DatetimeIndex.
 
+    Raises
+    ------
+    requests.exceptions.RequestException
+        If there's a problem with the network request.
+    FileNotFoundError
+        If the expected .geocsv file is not found after extraction/download.
+    ValueError
+        If the 'Navigation' product type is not found or if a suitable
+        time column for resampling cannot be identified.
+
+    Examples
+    --------
+    >>> import openspace_rvdata as r2r
+    >>> gdf = r2r.get_cruise_nav(cruise_id="RR2402", sampling_rate="1min")
+    >>> gdf.head()
+"""
     # --- 1. Generate the initial URL ---
     base_api_url = "https://service.rvdata.us/api/fileset/cruise_id/"
     api_url = f"{base_api_url}{cruise_id}"
