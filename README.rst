@@ -105,4 +105,4 @@ Citations
 .. |image| image:: https://github.com/user-attachments/assets/c397de8c-c8c4-4e8a-8ade-32f351be42fb
 .. |Binder| image:: https://mybinder.org/badge_logo.svg
  :target: https://mybinder.org/v2/gh/KCollins/openspace_rvdata/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2FMWE.ipynb
-   :alt: Launch Binder
+
