@@ -26,6 +26,10 @@ def get_r2r_url(cruise_id=None, doi=None, vessel_name=None):
 
     Raises:
         ValueError: If no arguments are given or an invalid combination of arguments is provided.
+
+    Example:
+        url = r2r.get_cruise_url("RR2402")
+
     """
     base_url = "https://service.rvdata.us/api/cruise/"
 
@@ -64,6 +68,10 @@ def get_cruise_metadata(url):
     Returns:
         pandas.DataFrame: A DataFrame containing the cruise data, or an empty
                           DataFrame if data fetching fails or is empty.
+
+    Example Use:
+        mdf = r2r.get_cruise_metadata(url)
+    
     """
 
     try:
